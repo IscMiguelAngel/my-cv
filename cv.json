@@ -1,0 +1,409 @@
+{
+  "basics": {
+    "name": "Isc Miguel Angel González de la Rosa",
+    "position": "Desarrollador web fullstack",
+    "image": "/img/profile.jpg",
+    "email": "isc.mangel.glzdelarosa@gmail.com",
+    "phone": "(52)8715722559",
+    "url": "https://github.com/IscMiguelAngel",
+    "summary": "Con 5 años de experiencia en el mundo de la programación, he crecido profesionalmente aprovechando cada oportunidad que se ha cruzado en mi camino. Actualmente, ocupo el emocionante rol de Programador Web Senior y Líder de Proyectos, un logro que destaco como uno de los hitos más significativos de mi corta pero intensa carrera. Mi capacidad para comprender rápidamente los desafíos técnicos y explorar en código desconocido me ha permitido sobresalir en cada proyecto.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Gómez Palacio",
+      "state": "Durango",
+      "country": "México",
+      "countryCode": "MX"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "isc-miguel-angel",
+        "url": "https://www.linkedin.com/in/isc-miguel-angel/"
+      },
+      {
+        "network": "GitHub",
+        "username": "IscMiguelAngel",
+        "url": "https://github.com/IscMiguelAngel"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Redzpot Impulso en Imagen",
+      "position": "Desarrollador web Sr, líder de proyectos",
+      "url": "https://redzpot.com",
+      "startDate": "2022-10-01",
+      "endDate": "",
+      "summary": "Desarrollador web senior y líder de proyectos con experiencia integral en el diseño y desarrollo de soluciones tecnológicas. Mi expertise abarca tanto el front-end como la implementación de módulos del back-end, con tecnologías como: HTML5, CSS con SASS, Javascript, PHP, MySQL, entre otras; librerías de diseño como: Bootstrap, MDBootstrap, Tailwind; librerías javascript como JQuery, Reacts JS, entre otras.",
+      "highlights": [
+        "Como Desarrollador Web Senior y Líder de Proyectos, lidero con pasión para el mantenimiento y desarrollo de proyectos web y aplicaciones móviles.",
+        "Mi enfoque se centra en la implementación eficiente de soluciones, la introducción de nuevos módulos innovadores y la garantía de la excelencia en el rendimiento."
+      ]
+    },
+    {
+      "company": "Redzpot Impulso en Imagen",
+      "position": "Desarrollador web",
+      "url": "https://redzpot.com",
+      "startDate": "2020-12-28",
+      "endDate": "2022-09-30",
+      "summary": "Desarrollador web especializado en la expansión y mejora de sistemas existentes, así como en el desarrollo de nuevas aplicaciones abarcando a lo que se llama \"fullstack\", con tecnologías como: HTML5, CSS con SASS, Javascript, PHP, MySQL; librerías de diseño como: Bootstrap, MDBootstrap; librerías Javascript como JQuery, etc.",
+      "highlights": [
+        "Encargado de dar mantenimiento e implementación de nuevos módulos en el sistema Fixccar y Toyota B&P.",
+        "He desarrollado proyectos para solucionar los problemas que surgen dentro de la empresa, como lo es la implementación de un sistema que gestiona videos de publicidad en pantallas ubicadas en distintos puntos de impacto en la ciudad, así como un reproductor web autónomo implementado en cada punto de impacto, este reproductor tiene la capacidad de descargar y reproducir los videos e imágenes enviados desde el administrador de publicidad.",
+        "Participé en el desarrollo de la aplicación móvil para el equipo de beisbol Algodoneros Unión laguna, e implementé una plataforma de registro para obtener el Algodonero ID, el cual es un código QR requerido para ingresar al estadio Revolución. Para comunicar ambos proyectos, desarrollé una API que se encarga de procesar las solicitudes de la aplicación móvil para poder interactuar con la base de datos.",
+        "Diseñé e implementé un algoritmo para obtener la información plana en un sitio web. Este proyecto trata de, mediante un código QR obtener un enlace, el cual nos lleva al mencionado sitio web, y de ahí leer internamente el contenido, para extraer la información necesaria y almacenarla en base de datos, para más tarde poder obtener esa información mediante reportes.",
+        "Desarrollé un sistema para administrar la venta de abonos para los partidos del equipo de Beisbol Algodoneros Unión Laguna. Este proyecto gestiona clientes y su información de facturación, localidades del estadio y precios por butaca, promociones, ventas directas y ventas por prospectos, las ventas cuentan con pagos en una sola excibición y en parcialidades, genera tickets de compra digitales que se envían a cada cliente al realizar su compra, etc."
+      ]
+    },
+    {
+      "company": "AW Software",
+      "position": "Desarrollador web",
+      "url": "https://awsoftware.mx",
+      "startDate": "2019-08-01",
+      "endDate": "2020-12-20",
+      "summary": "Desarrollador Web especializado en la creación de páginas web estáticas y dinámicas, sistemas gestores de contenido, blogs, tiendas en línea, entre otros, aplicando tecnologías tanto frontend como backend.",
+      "highlights": [
+        "Mi enfoque se basa en la implementación de sitios web provenientes del área de diseño gráfico, utilizando HTML5, CSS (compilado con Sass), JavaScript, jQuery, PHP y MySQL para garantizar soluciones web funcionales y visualmente atractivas.",
+        "Experiencia sólida en la creación de páginas web estáticas y dinámicas, abordando diversas necesidades y requerimientos.",
+        "Desarrollo exitoso de sistemas gestores de contenido, permitiendo una administración eficiente y escalable de la información en plataformas web."
+      ]
+    },
+    {
+      "company": "Freelance",
+      "position": "Desarrollador de software",
+      "url": "",
+      "startDate": "2019-08-01",
+      "endDate": "",
+      "summary": "Desarrollador Web Freelance con amplia experiencia en la creación de diversos proyectos, desde sistemas de gestión de contenido hasta páginas web estáticas y dinámicas, así como aplicaciones móviles. Especializado en el uso de tecnologías como JavaScript Vanilla, JQuery, React JS, React Native, Astro y PHP puro. Mi enfoque se centra en la entrega de soluciones personalizadas y eficientes que satisfacen las necesidades únicas de cada cliente. Apasionado por la innovación y la excelencia técnica, estoy disponible para colaborar en proyectos desafiantes y emocionantes.",
+      "highlights": [
+        "He demostrado habilidades en la creación de páginas web tanto estáticas como dinámicas, adaptándome a diferentes requisitos y especificaciones.",
+        "Destaco en la creación exitosa de tiendas en línea, aplicando técnicas efectivas para la gestión de transacciones y la experiencia del usuario en entornos de comercio electrónico.",
+        "Mi experiencia se extiende al desarrollo de diversas aplicaciones web, abordando desde proyectos simples hasta soluciones complejas y de gran escala.",
+        "He implementado sistemas de gestión de contenido (CMS) para facilitar la administración y actualización eficientes de contenido en plataformas web.",
+        "Contribuyo con conocimientos en la configuración de sistemas CRM, mejorando las interacciones y la gestión de relaciones con los clientes.",
+        "Diseño y desarrollo de APIs robustas para facilitar la comunicación efectiva entre diferentes sistemas y aplicaciones.",
+        "He participado en la creación exitosa de aplicaciones móviles, ampliando mi contribución al ecosistema digital."
+      ]
+    },
+    {
+      "company": "Instituto Tecnológico Superior Nacional de Lerdo",
+      "position": "Dearrollador web, líder de proyectos",
+      "url": "https://www.lerdo.tecnm.mx/",
+      "startDate": "2018-04-01",
+      "endDate": "2018-10-01",
+      "summary": "Desarrollador web, participante en el desarrollo de la plataforma SICSACID, en la cual estuve encargado de liderar al equipo de trabajo conformado por 5 personas, fui seleccionado para desarrollar 2 de los 5 módulos del backend, también para construir totalmente el frontend, además de implementar el registro, inicio de sesión y recuperación de contraseña.",
+      "highlights": [
+        "Durante mis prácticas profesionales, lideré de manera efectiva mi equipo, ayudando a que alcanzáramos nuestros objetivos.",
+        "Coordiné las tareas, fomenté un ambiente colaborativo y aseguré que todos estuvieran en sintonía con los objetivos del proyecto.",
+        "Mi enfoque proactivo y habilidades de liderazgo fueron clave para el éxito, mostrando mi capacidad para inspirar y dirigir al equipo hacia el logro de metas compartidas."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Instituto Tecnológico Superior Nacional de Lerdo",
+      "url": "https://www.lerdo.tecnm.mx/",
+      "area": "Sistemas Computacionales",
+      "studyType": "Ingeniería",
+      "startDate": "2014-08-14",
+      "endDate": "2018-11-30",
+      "specialty": "Bases de Datos"
+    },
+    {
+      "institution": "Colegio de Bachilleres del Estado de Durango",
+      "url": "https://cobaed.mx",
+      "area": "Programación .NET",
+      "studyType": "Bachiller",
+      "startDate": "2011-08-14",
+      "endDate": "2014-06-30",
+      "specialty": "Programación .NET"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "La biblia perdida de Bootstrap",
+      "date": "2022-06-01",
+      "issuer": "Erick Mines / Udemy",
+      "certificate": "UC-b69cc497-3cb3-4fb5-8134-133f477cb75f",
+      "url": "https://www.udemy.com/certificate/UC-b69cc497-3cb3-4fb5-8134-133f477cb75f/"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo web",
+        "Frontend",
+        "Maquetación"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Intermedio - Avanzado",
+      "keywords": [
+        "Desarrollo web",
+        "Frontend",
+        "Diseño",
+        "Estilado"
+      ]
+    },
+    {
+      "name": "SCSS",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo web",
+        "Frontend",
+        "Diseño",
+        "CSS",
+        "Compilador CSS"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo web",
+        "Frontend",
+        "Diseño",
+        "Framework CSS",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Básico",
+      "keywords": [
+        "Desarrollo web",
+        "Frontend",
+        "Diseño",
+        "Framework CSS",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "Javascript",
+      "level": "Intermedio - Avanzado",
+      "keywords": [
+        "Desarrollo web",
+        "Frontend",
+        "Ecmascript"
+      ]
+    },
+    {
+      "name": "JQuery",
+      "level": "Intermedio - Avanzado",
+      "keywords": [
+        "Desarrollo web",
+        "Frontend",
+        "Librería Javascript"
+      ]
+    },
+    {
+      "name": "React JS",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo web",
+        "Frontend",
+        "Librería Javascript"
+      ]
+    },
+    {
+      "name": "React Native",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo web",
+        "Frontend",
+        "Librería Javascript"
+      ]
+    },
+    {
+      "name": "PHP",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo web",
+        "Backend",
+        "Servidor"
+      ]
+    },
+    {
+      "name": "Laravel",
+      "level": "Básico",
+      "keywords": [
+        "Desarrollo web",
+        "Backend",
+        "Servidor",
+        "Framework PHP"
+      ]
+    },
+    {
+      "name": "MYSQL",
+      "level": "Intermedio - Avanzado",
+      "keywords": [
+        "Backend",
+        "Bases de datos",
+        "SQL",
+        "Almacenamiento de datos"
+      ]
+    },
+    {
+      "name": "SQL Server",
+      "level": "Básico - Intermedio",
+      "keywords": [
+        "Backend",
+        "Bases de datos",
+        "SQL",
+        "Almacenamiento de datos"
+      ]
+    },
+    {
+      "name": "PostgreeSQL",
+      "level": "Básico",
+      "keywords": [
+        "Backend",
+        "Bases de datos",
+        "SQL",
+        "Almacenamiento de datos"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Básico - Intermedio",
+      "keywords": [
+        "Control de versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Básico",
+      "keywords": [
+        "Control de versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Básico"
+    }
+  ],
+  "references": [
+    {
+      "name": "Karla Rodríguez",
+      "reference": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, facilis aspernatur fuga dolore minima ex consequatur, quisquam aperiam assumenda temporibus, magnam iste voluptatem doloribus libero reprehenderit quis hic illo! Minima et est modi velit magnam provident quo placeat deleniti nulla? Ipsam distinctio dignissimos nesciunt! Sunt eos enim itaque quam rerum?"
+    },
+    {
+      "name": "Eduardo Corcuera",
+      "reference": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, facilis aspernatur fuga dolore minima ex consequatur, quisquam aperiam assumenda temporibus, magnam iste voluptatem doloribus libero reprehenderit quis hic illo! Minima et est modi velit magnam provident quo placeat deleniti nulla? Ipsam distinctio dignissimos nesciunt! Sunt eos enim itaque quam rerum?"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Vezabox",
+      "startDate": "2023-07-01",
+      "endDate": "2023-12-01",
+      "description": "Aplicación móvil, gestión de contenido, api y base de datos. Aplicación móvil que brinda la oportunidad a creadores estudiantiles y particulares de presentar sus trabajos al mundo.",
+      "highlights": [
+        "En el proyecto Vezabox, lideré el desarrollo de un sistema integral que abarcaba varios componentes clave. Utilicé PHP puro para construir tanto el Sistema de Gestión de Contenido como la API, demostrando mi habilidad y dominio en este lenguaje de programación.",
+        "Desarrollé la aplicación móvil utilizando React Native, lo que resalta mi versatilidad al trabajar con diferentes tecnologías y frameworks. La interconexión exitosa entre los distintos componentes del sistema refleja mis habilidades en el diseño y desarrollo de soluciones completas.",
+        "Establecí una base de datos eficiente para almacenar de manera segura toda la información generada por estos sistemas interconectados, destacando mi capacidad para manejar la gestión de datos de manera efectiva.",
+        "Uno de los aspectos más destacados de mi participación fue la capacidad para integrar tecnologías diversas en un ecosistema coherente. Este proyecto no solo puso de manifiesto mis habilidades técnicas, sino también mi capacidad para abordar desafíos complejos en la creación de soluciones tecnológicas cohesionadas."
+      ],
+      "url": "https://vezabox.com/"
+    },
+    {
+      "name": "SICSACID",
+      "startDate": "2018-04-01",
+      "endDate": "2018-10-01",
+      "description": "Sistema de Control y Seguimiento de Artículos para la Revista \"Ciencia, Investigación y Desarrollo\".",
+      "highlights": [
+        "Como líder del proyecto SICSACID (Sistema de Control y Seguimiento de Artículos para la revista CID) durante mis prácticas profesionales, tuve el privilegio de dirigir el desarrollo desde la concepción hasta la implementación. Aporté significativamente al proyecto al encargarme del diseño completo del frontend y desempeñar un papel activo en tres de los seis módulos del backend.",
+        "Mi contribución incluyó liderar la implementación del control de credenciales, con funciones clave como el inicio de sesión y registro. Esta experiencia no solo me permitió aplicar y fortalecer mis conocimientos técnicos, sino que también me brindó la valiosa oportunidad de liderar y coordinar un equipo en un entorno real de desarrollo de software.",
+        "En resumen, mi participación en el proyecto SICSACID destacó mi capacidad para liderar proyectos desde la concepción hasta la implementación, así como mi destreza técnica en el diseño frontend y el desarrollo backend, especialmente en el crucial control de credenciales."
+      ],
+      "url": "http://sicsacid.itslerdo.edu.mx/"
+    },
+    {
+      "name": "Abonos UL",
+      "startDate": "",
+      "endDate": "",
+      "description": "Sistema para administrar la venta de abonos para los partidos del equipo de Beisbol Algodoneros Unión Laguna.",
+      "highlights": [
+        "Desarrollé un sistema integral para administrar la venta de abonos para los partidos del equipo de béisbol Algodoneros Unión Laguna. Este proyecto abarca diversas funcionalidades clave.",
+        "Implementé un sistema que administra de manera eficiente la información de los clientes, incluyendo detalles de facturación y seguimiento de sus compras.",
+        "Diseñé una estructura que permite gestionar las localidades del estadio y establecer precios por butaca, proporcionando flexibilidad en la oferta para los aficionados.",
+        "Implementé funcionalidades para la gestión de promociones, lo que permitió la aplicación de estrategias de marketing y ventas para impulsar la participación de los aficionados.",
+        "Facilité tanto ventas directas como ventas por prospectos, brindando opciones variadas para maximizar la accesibilidad a los abonos.",
+        "Habilité la posibilidad de realizar pagos tanto en una sola exhibición como en parcialidades, adaptándome a las necesidades y preferencias de los clientes.",
+        "Implementé un sistema para generar tickets de compra digitales, los cuales se envían automáticamente a cada cliente al completar su compra, proporcionando una experiencia conveniente y eficiente.",
+        "En resumen, este proyecto no solo demostró mi capacidad para desarrollar soluciones completas y complejas, sino también mi habilidad para abordar aspectos clave en la gestión de ventas y satisfacción del cliente en el contexto específico de la venta de abonos para eventos deportivos."
+      ],
+      "url": "https://abonosul.impulsoenimagen.com/"
+    },
+    {
+      "name": "CSFQR",
+      "startDate": "",
+      "endDate": "",
+      "description": "Constancias de Situación Fiscal por QR.",
+      "highlights": [
+        "Desarrollé CSFQR, un sistema web integral diseñado, desarrollado e implementado para la obtención eficiente de información a partir de las Constancias de Situación Fiscal.",
+        "Conduje el diseño y desarrollo completo de CSFQR, asegurando una interfaz web intuitiva y funcional para facilitar la obtención y procesamiento de información desde las Constancias de Situación Fiscal.",
+        "Diseñé y co-desarrollé una aplicación móvil complementaria que permite la captura del código QR de cada constancia. La URL resultante se envía de manera eficiente al sistema CSFQR mediante una API, estableciendo una conexión fluida entre la aplicación móvil y el sistema central.",
+        "Implementé un proceso dentro del sistema para procesar las URL obtenidas a través del código QR de cada constancia. Esto permitió la extracción efectiva de la información relevante de cada persona.",
+        "Desarrollé un sistema de registro en base de datos para almacenar la información obtenida, asegurando una gestión eficiente y segura de los datos de los contribuyentes.",
+        "Implementé la capacidad de exportar la información almacenada en formato EXCEL, facilitando la manipulación y análisis de los datos recopilados.",
+        "Facilité la integración del sistema CSFQR con otro sistema externo, permitiendo la transferencia masiva de datos de manera eficiente.",
+        "En resumen, mi participación en el desarrollo de CSFQR destacó mi habilidad para crear soluciones integrales, desde el diseño hasta la implementación, con un enfoque especial en la captura eficiente de datos y su posterior procesamiento para su uso en otros sistemas."
+      ],
+      "url": "https://csfqr.impulsoenimagen.com/"
+    },
+    {
+      "name": "Socio Guinda",
+      "startDate": "",
+      "endDate": "",
+      "description": "Plataforma de registro para obtener un código de barras y código QR.",
+      "highlights": [
+        "Diseñé y desarrollé una plataforma completa que permite a los usuarios obtener su código de barras y código QR, simplificando el proceso de acceso al estadio Revolución.",
+        "Desarrollé un sistema que genera códigos de barras y códigos QR únicos para cada usuario registrado, proporcionando una solución segura y personalizada para el acceso al estadio.",
+        "Prioricé la experiencia del usuario al diseñar una interfaz intuitiva en la plataforma de registro, facilitando el proceso para obtener los códigos necesarios."
+      ],
+      "url": "https://algodonero.unionlaguna.mx/"
+    },
+    {
+      "name": "Redzpotmedia",
+      "startDate": "",
+      "endDate": "",
+      "description": "Redzpotmedia Admin y Redzpotmedia Reproductor, sistema de reproducción de video para publicidad en puntos de impacto.",
+      "highlights": [
+        "Diseñé y desarrollé un gestor de contenido multimedia que permite la adición de videos e imágenes a listas de reproducción, brindando flexibilidad en la presentación de multimedia en distintos entornos.",
+        "Adapté la plataforma para ser compatible con Raspberry Pi, optimizando así la implementación del sistema en dispositivos de bajo costo y alta versatilidad.",
+        "Desarrollé un reproductor web compatible con sistemas LAMP, preferentemente instalado en Raspberry Pi, facilitando la reproducción de listas de reproducción de multimedia.",
+        "Implementé la capacidad de actualizar automáticamente las listas de reproducción y multimedia en cada punto de impacto, permitiendo una gestión eficiente y sincronizada desde Redzpotmedia Admin.",
+        "Diseñé el sistema para que la reproducción de multimedia sea totalmente offline, minimizando la dependencia de la conexión a Internet y mejorando la estabilidad del servicio en diferentes entornos.",
+        "Logré que cada punto de impacto actualice su lista de reproducción y multimedia en segundo plano, sin interrupciones en la reproducción actual. Posteriormente, se realiza un \"refresh\" para mostrar los cambios, garantizando una experiencia fluida para los usuarios.",
+        "En resumen, mi participación en Redzpotmedia destaca mi habilidad para crear soluciones completas, desde la gestión eficiente del contenido multimedia hasta la implementación de reproductores web en entornos específicos, con un enfoque especial en la adaptabilidad, eficiencia y experiencia del usuario."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Qabuu",
+      "startDate": "",
+      "endDate": "",
+      "description": "Plataforma para venta y renta de locales comerciales, naves industriales, coworkings, etc.",
+      "highlights": [
+        "Contribuí de manera integral al desarrollo del front-end y participé activamente en la implementación de algunos módulos del back-end en el proyecto Qabuu. Aunque asumí un papel de seguidor en este proyecto, trabajé estrechamente con el equipo para superar desafíos y avanzar hacia las metas establecidas.",
+        "A pesar de que el proyecto fue cancelado antes de su lanzamiento, la experiencia obtenida y los conocimientos adquiridos representan un valioso crecimiento en mi trayectoria profesional. Este proyecto, a pesar de no llegar a ver la luz, dejó una huella significativa en mi aprendizaje y desarrollo, demostrando mi capacidad para adaptarme y contribuir de manera efectiva en un entorno colaborativo, incluso en circunstancias desafiantes."
+      ]
+    }
+  ]
+}

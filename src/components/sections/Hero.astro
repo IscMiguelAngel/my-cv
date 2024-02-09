@@ -1,0 +1,166 @@
+---
+import { basics } from '@cv'
+import Section from '@/components/Section.astro'
+import Email from '@/icons/Email.astro'
+import Phone from '@/icons/Phone.astro'
+import GitHub from '@/icons/GitHub.astro'
+import LinkedIn from '@/icons/LinkedIn.astro'
+import WordMap from '@/icons/WordMap.astro'
+
+const { name, position, image, email, phone, url, summary, location, profiles } = basics
+const { city, state, country } = location
+const SOCIAL_ICONS: Record<string, any> = {
+    GitHub,
+    LinkedIn
+}
+---
+
+<Section>
+    <div class="container">
+        <div class="info">
+            <h1>{ name }</h1>
+            <h2>{ position }</h2>
+            <p>
+                <WordMap />
+                { city }, { state }, { country }
+            </p>
+            <footer>
+                {
+                    email && (
+                        <a
+                            href={ `mailto:${ email }` }
+                            title={ `Enviar un correo electrónico a ${ name } al correo ${ email }` }
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Email />
+                        </a>
+                    )
+                }
+                {
+                    phone && (
+                        <a
+                            href={ `mailto:${ phone }` }
+                            title={ `Llamar a ${ name } al número de teléfono ${ phone }` }
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Phone />
+                        </a>
+                    )
+                }
+                {
+                    profiles.map(({ network, username, url }) => {
+                        const Icon = SOCIAL_ICONS[network]
+
+                        return (
+                            <a 
+                                href={ url }
+                                title={ `Visitar el perfil de ${ name } en ${ network }` }
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Icon />    
+                            </a>
+                        )
+                    })
+                }
+            </footer>
+        </div>
+        <figure>
+            <img src={ image } alt={ name }>
+        </figure>
+    </div>
+</Section>
+
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .container .info {
+        width: auto;
+    }
+
+    .container figure {
+        max-width: 150px;
+        height: 150px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 6px;
+    }
+
+    .container figure img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    .container .info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-right: 32px;
+    }
+
+    .container .info h1 {
+        font-size: 2rem;
+        text-wrap: pretty;
+    }
+
+    .container .info h2 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #444;
+        text-wrap: balance;
+    }
+    
+    .container .info p {
+        color: #666;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: 0.85rem;
+        letter-spacing: -0.05rem;
+    }
+
+    .container .info footer {
+        display: flex;
+        gap: 4px;
+        margin-top: 8px;
+    }
+
+    .container .info footer a {
+        color: #777;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        padding: 4px;
+        height: 32px;
+        width: 32px;
+        border-radius: 6px;
+        transition: all 0.5s ease;
+        position: relative;
+        z-index: 1;
+    }
+
+    .container .info footer a svg {
+        position: relative!important;
+        z-index: -1!important;
+    }
+
+    .container .info footer a:hover {
+        background-color: #eee;
+        border-color: #444;
+    }
+</style>

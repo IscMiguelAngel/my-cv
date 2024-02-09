@@ -1,0 +1,59 @@
+---
+import Section from "@/components/Section.astro"
+import { education } from '@cv'
+
+import { formatDate } from '@/js/Functions'
+
+---
+
+<Section title="Educación">
+    {
+        education.map(({ institution, url, area, studyType, startDate, endDate, specialty }) => {
+            return (
+                <div class="container">
+                    <div class="institution">
+                        <h3>{ url !== "" ? <a href={ url } target="_blank" title={ `Visitar sitio web de ${ institution }` }>{ institution }</a> : institution }</h3>
+                        <p>{ formatDate(startDate, false, true) } - { formatDate(endDate, false, true) }</p>
+                    </div>
+                    <h4>{ studyType } en { area } con especialidad en { specialty }</h4>
+                </div>
+            )
+        })
+    }
+</Section>
+
+<style>
+    .container {
+        margin-bottom: 8px;
+    }
+
+    .container .institution {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .container .institution h3, .container .institution h3 a {
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 0;
+        display: inline;
+    }
+
+    .container .institution h3 a:link, .container .institution h3 a:visited, .container .institution h3 a:active {
+        color: #333;
+    }
+
+    .container .institution p {
+        line-height: 1.5;
+    }
+
+    .container h4, .container h4 a {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+</style>
