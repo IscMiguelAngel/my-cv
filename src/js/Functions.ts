@@ -12,7 +12,7 @@ const formatDate = (date: string = "", includeDay: boolean = false, includeMonth
     const monthName: string = includeMonth ? getMonthName(month) : ''
 
   
-    const dateParsed: string = `${ includeDay ? formatedDay + ' de ' : '' }${ includeMonth ? monthName + ' del ' : '' }${ year }`
+    const dateParsed: string = `${ includeDay ? formatedDay + ' de ' : '' }${ includeMonth ? monthName + ' ' : '' }${ year }`
   
     return dateParsed
   } else return "Actualidad"
@@ -20,7 +20,7 @@ const formatDate = (date: string = "", includeDay: boolean = false, includeMonth
 
 const getMonthName = (month: Number) => {
     const months: string[] = [
-        "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"
     ]
     
     return months[parseInt(month.toString()) - 1]

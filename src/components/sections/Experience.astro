@@ -6,132 +6,35 @@ import { formatDate, UUID } from '@/js/Functions'
 ---
 
 <Section title="Experiencia">
+    <ul class="list">
     {
         work.map(({ company, position, url, startDate, endDate, summary, highlights }, index) => {
             const uuid = UUID()
             return (
-                <div class="container" id={ uuid }>
-                    <div class="company">
-                        <h3>{ url !== "" ? <a href={ url } target="_blank" title={ `Visitar sitio web de ${ company }` }>{ company }</a> : company }</h3>
-                        <p>{ formatDate(startDate, false, true) } - { formatDate(endDate, false, true) }</p>    
-                    </div>
-                    <h4>{ position }</h4>
-                    <p>{ summary }</p>
-                    <div class="hightlights-container">
-                        <button class="btnShowMore" data-id={ uuid }>Ver más +</button>
-                        <ul class="hightlights" id={`hightlights-${ uuid }`}>
-                        {
-                            highlights.map((highlight) => <li>
-                                { highlight }    
-                            </li>)
-                        }
-                        </ul>
-                    </div>
-                </div>
+                <li id={ uuid }>
+                    <article>
+                        <header>
+                            <div>
+                                <h3>{ url !== "" ? <a href={ url } target="_blank" title={ `Visitar sitio web de ${ company }` }>{ company }</a> : company }</h3>
+                                <h4>{ position }</h4>
+                            </div>
+                            <time>{ formatDate(startDate, false, true) } - { formatDate(endDate, false, true) }</time>            
+                        </header>
+                        <main>
+                            <p>{ summary }</p>
+                        </main>
+                    </article>    
+                </li>
             )
         })
     }
+    </ul>
 </Section>
 
-<script>
-    const btnShowMore = document.querySelectorAll(".btnShowMore")
-    
-    btnShowMore.forEach(button => {
-        button.addEventListener("click", (e) => {
-            const id = button.getAttribute("data-id")
-
-            const hightlights = document.getElementById(`hightlights-${ id }`)
-            if(hightlights.classList.contains("active")) {
-                button.innerHTML = "Ver más +"
-                hightlights.classList.remove("active")
-            }
-            else {
-                button.innerHTML = "Ver menos -"
-                hightlights.classList.add("active")
-            }
-        })
-    });
-</script>
-
 <style>
-    .container {
-        margin-bottom: 48px;
-    }
-
-    .container .company {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-    }
-
-    .container .company h3,.container .company h3 a {
-        font-size: 1.2rem;
-        font-weight: 500;
-        line-height: 1.5;
-        margin-bottom: 0;
-        display: inline;
-    }
-
-    .container .company h3 a:link, .container .company h3 a:visited, .container .company h3 a:active {
-        color: #333;
-    }
-
-    .container .company p {
-        line-height: 1.5;
-    }
-
-    .container h4, .container h4 a {
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-    }
-
-    .container .hightlights-container {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-
-    .container .hightlights-container button {
-        background-color: transparent;
-        color: #777;
-        border: 1px solid #eee;
-        padding: 4px;
-        border-radius: 6px;
-        transition: all 0.5s ease;
-        margin: 0 0 0 auto;
-        display: block;
-        cursor: pointer;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 9;
-    }
-
-    .container .hightlights-container button:hover {
-        background-color: #eee;
-        color: #444;
-    }
-
-    .container .hightlights-container .hightlights {
-        height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transition: all 0.5s ease;
-        margin-top: 0;
-        list-style: inside;
-    }
-
-    .container .hightlights-container .hightlights.active {
-        height: auto;
-        overflow: auto;
-        opacity: 1;
-        margin-top: 40px;
-    }
-
-    .container .hightlights-container:has(>.hightlights.active) button {
-        top: -35px;
-    }
+	@media screen and (max-width: 768px) {
+		.list li article header {
+			display: block;
+		}
+	}
 </style>

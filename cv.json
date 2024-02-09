@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Isc Miguel Angel González de la Rosa",
-    "position": "Desarrollador web fullstack",
+    "position": "Desarrollador de software fullstack",
     "image": "/img/profile.jpg",
     "email": "isc.mangel.glzdelarosa@gmail.com",
     "phone": "(52)8715722559",
@@ -309,101 +309,76 @@
   ],
   "projects": [
     {
-      "name": "Vezabox",
-      "startDate": "2023-07-01",
-      "endDate": "2023-12-01",
-      "description": "Aplicación móvil, gestión de contenido, api y base de datos. Aplicación móvil que brinda la oportunidad a creadores estudiantiles y particulares de presentar sus trabajos al mundo.",
-      "highlights": [
-        "En el proyecto Vezabox, lideré el desarrollo de un sistema integral que abarcaba varios componentes clave. Utilicé PHP puro para construir tanto el Sistema de Gestión de Contenido como la API, demostrando mi habilidad y dominio en este lenguaje de programación.",
-        "Desarrollé la aplicación móvil utilizando React Native, lo que resalta mi versatilidad al trabajar con diferentes tecnologías y frameworks. La interconexión exitosa entre los distintos componentes del sistema refleja mis habilidades en el diseño y desarrollo de soluciones completas.",
-        "Establecí una base de datos eficiente para almacenar de manera segura toda la información generada por estos sistemas interconectados, destacando mi capacidad para manejar la gestión de datos de manera efectiva.",
-        "Uno de los aspectos más destacados de mi participación fue la capacidad para integrar tecnologías diversas en un ecosistema coherente. Este proyecto no solo puso de manifiesto mis habilidades técnicas, sino también mi capacidad para abordar desafíos complejos en la creación de soluciones tecnológicas cohesionadas."
-      ],
+      "name": "Vezabox App",
+      "description": "Aplicación móvil de reproducción de video, con temás de interes, entretenimiento local, educativo, etc.",
+      "labels": ["React Native", "Style", "Javascript"],
+      "url": "https://play.google.com/store/apps/details?id=com.vezabox.app"
+    },
+    {
+      "name": "Vezabox Adm",
+      "description": "CMS para la gestión de contenido, usuarios, anuncios, etc., de la aplicación Vezabox.",
+      "labels": ["HTML5", "SASS", "CSS3", "Bootstrap 5", "MD Bootstrap", "PHP", "MySQL"],
+      "url": "https://app.vezabox.com/"
+    },
+    {
+      "name": "Vezabox Web",
+      "description": "Sitio web desarrollado para funciones específicas de Vezabox tales como: cambio de contraseña, códigos de seguridad, etc. En un futuro se desarrollará un sitio web promocional para Vezabox App.",
+      "labels": ["React JS", "Javascript", "HTML5", "CSS3", "SASS"],
       "url": "https://vezabox.com/"
     },
     {
+      "name": "Vezabox Api",
+      "description": "Api rest desarrollada para la comunicación entre Vezabox App, Vezabox Adm y Vezabox Web.",
+      "labels": ["PHP"],
+      "url": "https://vezabox.com/api"
+    },
+    {
       "name": "SICSACID",
-      "startDate": "2018-04-01",
-      "endDate": "2018-10-01",
-      "description": "Sistema de Control y Seguimiento de Artículos para la Revista \"Ciencia, Investigación y Desarrollo\".",
-      "highlights": [
-        "Como líder del proyecto SICSACID (Sistema de Control y Seguimiento de Artículos para la revista CID) durante mis prácticas profesionales, tuve el privilegio de dirigir el desarrollo desde la concepción hasta la implementación. Aporté significativamente al proyecto al encargarme del diseño completo del frontend y desempeñar un papel activo en tres de los seis módulos del backend.",
-        "Mi contribución incluyó liderar la implementación del control de credenciales, con funciones clave como el inicio de sesión y registro. Esta experiencia no solo me permitió aplicar y fortalecer mis conocimientos técnicos, sino que también me brindó la valiosa oportunidad de liderar y coordinar un equipo en un entorno real de desarrollo de software.",
-        "En resumen, mi participación en el proyecto SICSACID destacó mi capacidad para liderar proyectos desde la concepción hasta la implementación, así como mi destreza técnica en el diseño frontend y el desarrollo backend, especialmente en el crucial control de credenciales."
-      ],
+      "description": "Sistema de Control y Seguimiento de Artículos para la Revista \"Ciencia, Ingeniería y Desarrollo\" del Tecnológico Superior de Lerdo.",
+      "labels": ["HTML5", "CSS3", "Bootstrap 4", "JQuery", "PHP", "MySQL"],
       "url": "http://sicsacid.itslerdo.edu.mx/"
     },
     {
       "name": "Abonos UL",
-      "startDate": "",
-      "endDate": "",
-      "description": "Sistema para administrar la venta de abonos para los partidos del equipo de Beisbol Algodoneros Unión Laguna.",
-      "highlights": [
-        "Desarrollé un sistema integral para administrar la venta de abonos para los partidos del equipo de béisbol Algodoneros Unión Laguna. Este proyecto abarca diversas funcionalidades clave.",
-        "Implementé un sistema que administra de manera eficiente la información de los clientes, incluyendo detalles de facturación y seguimiento de sus compras.",
-        "Diseñé una estructura que permite gestionar las localidades del estadio y establecer precios por butaca, proporcionando flexibilidad en la oferta para los aficionados.",
-        "Implementé funcionalidades para la gestión de promociones, lo que permitió la aplicación de estrategias de marketing y ventas para impulsar la participación de los aficionados.",
-        "Facilité tanto ventas directas como ventas por prospectos, brindando opciones variadas para maximizar la accesibilidad a los abonos.",
-        "Habilité la posibilidad de realizar pagos tanto en una sola exhibición como en parcialidades, adaptándome a las necesidades y preferencias de los clientes.",
-        "Implementé un sistema para generar tickets de compra digitales, los cuales se envían automáticamente a cada cliente al completar su compra, proporcionando una experiencia conveniente y eficiente.",
-        "En resumen, este proyecto no solo demostró mi capacidad para desarrollar soluciones completas y complejas, sino también mi habilidad para abordar aspectos clave en la gestión de ventas y satisfacción del cliente en el contexto específico de la venta de abonos para eventos deportivos."
-      ],
+      "description": "CRM para la administración de clientes y venta de abonos del equipo Algodoneros Unión Laguna.",
+      "labels": ["HTML5", "SASS", "CSS3", "JQuery", "PHP", "MySQL"],
       "url": "https://abonosul.impulsoenimagen.com/"
     },
     {
       "name": "CSFQR",
-      "startDate": "",
-      "endDate": "",
-      "description": "Constancias de Situación Fiscal por QR.",
-      "highlights": [
-        "Desarrollé CSFQR, un sistema web integral diseñado, desarrollado e implementado para la obtención eficiente de información a partir de las Constancias de Situación Fiscal.",
-        "Conduje el diseño y desarrollo completo de CSFQR, asegurando una interfaz web intuitiva y funcional para facilitar la obtención y procesamiento de información desde las Constancias de Situación Fiscal.",
-        "Diseñé y co-desarrollé una aplicación móvil complementaria que permite la captura del código QR de cada constancia. La URL resultante se envía de manera eficiente al sistema CSFQR mediante una API, estableciendo una conexión fluida entre la aplicación móvil y el sistema central.",
-        "Implementé un proceso dentro del sistema para procesar las URL obtenidas a través del código QR de cada constancia. Esto permitió la extracción efectiva de la información relevante de cada persona.",
-        "Desarrollé un sistema de registro en base de datos para almacenar la información obtenida, asegurando una gestión eficiente y segura de los datos de los contribuyentes.",
-        "Implementé la capacidad de exportar la información almacenada en formato EXCEL, facilitando la manipulación y análisis de los datos recopilados.",
-        "Facilité la integración del sistema CSFQR con otro sistema externo, permitiendo la transferencia masiva de datos de manera eficiente.",
-        "En resumen, mi participación en el desarrollo de CSFQR destacó mi habilidad para crear soluciones integrales, desde el diseño hasta la implementación, con un enfoque especial en la captura eficiente de datos y su posterior procesamiento para su uso en otros sistemas."
-      ],
+      "description": "Sistema desarrollado especialmente para obtener y procesar información a través de un código QR (tomada mediante CSFQR App) de las Constancias de Situación Fiscal expedidas por el SAT.",
+      "labels": ["HTML5", "CSS3", "SASS", "Bootstrap 4", "JQuery", "PHP", "MySQL"],
       "url": "https://csfqr.impulsoenimagen.com/"
     },
     {
+      "name": "CSFQR App",
+      "description": "Participación en el desarrollo de CSFQR App, encargada de capturar el código QR y enviarlo a través de CSFQR Api.",
+      "labels": ["Ionic", "Angular", "HTML5", "CSS3", "SASS"],
+      "url": ""
+    },
+    {
+      "name": "CSFQR Api",
+      "description": "Desarrollo de Api rest para la comunicación entre CSFQR y CSFQR App.",
+      "labels": ["PHP"],
+      "url": "https://csfqr.impulsoenimagen.com/api"
+    },
+    {
       "name": "Socio Guinda",
-      "startDate": "",
-      "endDate": "",
-      "description": "Plataforma de registro para obtener un código de barras y código QR.",
-      "highlights": [
-        "Diseñé y desarrollé una plataforma completa que permite a los usuarios obtener su código de barras y código QR, simplificando el proceso de acceso al estadio Revolución.",
-        "Desarrollé un sistema que genera códigos de barras y códigos QR únicos para cada usuario registrado, proporcionando una solución segura y personalizada para el acceso al estadio.",
-        "Prioricé la experiencia del usuario al diseñar una interfaz intuitiva en la plataforma de registro, facilitando el proceso para obtener los códigos necesarios."
-      ],
+      "description": "Plataforma de registro para obtener un código de barras y código QR necesarios para el acceso al estadio Revolución, propiedad del equipo Algodoneros Unión Laguna.",
+      "labels": ["HTML5", "CSS3", "Javascript", "PHP", "MySQL"],
       "url": "https://algodonero.unionlaguna.mx/"
     },
     {
-      "name": "Redzpotmedia",
-      "startDate": "",
-      "endDate": "",
-      "description": "Redzpotmedia Admin y Redzpotmedia Reproductor, sistema de reproducción de video para publicidad en puntos de impacto.",
-      "highlights": [
-        "Diseñé y desarrollé un gestor de contenido multimedia que permite la adición de videos e imágenes a listas de reproducción, brindando flexibilidad en la presentación de multimedia en distintos entornos.",
-        "Adapté la plataforma para ser compatible con Raspberry Pi, optimizando así la implementación del sistema en dispositivos de bajo costo y alta versatilidad.",
-        "Desarrollé un reproductor web compatible con sistemas LAMP, preferentemente instalado en Raspberry Pi, facilitando la reproducción de listas de reproducción de multimedia.",
-        "Implementé la capacidad de actualizar automáticamente las listas de reproducción y multimedia en cada punto de impacto, permitiendo una gestión eficiente y sincronizada desde Redzpotmedia Admin.",
-        "Diseñé el sistema para que la reproducción de multimedia sea totalmente offline, minimizando la dependencia de la conexión a Internet y mejorando la estabilidad del servicio en diferentes entornos.",
-        "Logré que cada punto de impacto actualice su lista de reproducción y multimedia en segundo plano, sin interrupciones en la reproducción actual. Posteriormente, se realiza un \"refresh\" para mostrar los cambios, garantizando una experiencia fluida para los usuarios.",
-        "En resumen, mi participación en Redzpotmedia destaca mi habilidad para crear soluciones completas, desde la gestión eficiente del contenido multimedia hasta la implementación de reproductores web en entornos específicos, con un enfoque especial en la adaptabilidad, eficiencia y experiencia del usuario."
-      ],
+      "name": "Redzpotmedia Reproductor",
+      "description": "Sistema de reproducción de videos publicitarios, con identificación automática de punto de impacto así actualización automática de listas de reproducción.",
+      "labels": ["HTML5", "CSS3", "SASS", "JQuery"],
       "url": ""
     },
     {
       "name": "Qabuu",
-      "startDate": "",
-      "endDate": "",
-      "description": "Plataforma para venta y renta de locales comerciales, naves industriales, coworkings, etc.",
-      "highlights": [
-        "Contribuí de manera integral al desarrollo del front-end y participé activamente en la implementación de algunos módulos del back-end en el proyecto Qabuu. Aunque asumí un papel de seguidor en este proyecto, trabajé estrechamente con el equipo para superar desafíos y avanzar hacia las metas establecidas.",
-        "A pesar de que el proyecto fue cancelado antes de su lanzamiento, la experiencia obtenida y los conocimientos adquiridos representan un valioso crecimiento en mi trayectoria profesional. Este proyecto, a pesar de no llegar a ver la luz, dejó una huella significativa en mi aprendizaje y desarrollo, demostrando mi capacidad para adaptarme y contribuir de manera efectiva en un entorno colaborativo, incluso en circunstancias desafiantes."
-      ]
+      "description": "Participación en el desarrollo de la plataforma Qabuu, para venta y renta de locales comerciales, naves industriales, coworkings, etc. Desarrollé el frontent total, y participé en algunos módulos del backend.",
+      "labels": ["HTML5", "CSS3", "SASS", "JQuery", "PHP", "MySQL", "Conekta"],
+      "url": ""
     }
   ]
 }

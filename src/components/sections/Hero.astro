@@ -17,21 +17,34 @@ const SOCIAL_ICONS: Record<string, any> = {
 
 <Section>
     <div class="container">
+        <figure>
+            <img src={ image } alt={ name }>
+        </figure>
         <div class="info">
-            <h1>{ name }</h1>
-            <h2>{ position }</h2>
-            <p>
+            <div>
+                <h1>{ name }</h1>
+                <h2>{ position }</h2>
+            </div>
+            <h3>
                 <WordMap />
                 { city }, { state }, { country }
-            </p>
-            <footer>
+            </h3>
+            <footer class="print">
+                <p>{ <Phone /> }8715712559</p>
+                <p>{ <Email /> }isc.mangel.glzdelarosa@gmail.com</p>
+                <p><LinkedIn /> isc-miguel-angel</p>
+                <p><GitHub /> IscMiguelAngel</p>
+            </footer>
+            <footer class="no-print">
                 {
                     email && (
                         <a
+                            class="button square"
                             href={ `mailto:${ email }` }
                             title={ `Enviar un correo electrónico a ${ name } al correo ${ email }` }
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label={ `Enviar un correo electrónico a ${ name } al correo ${ email }` }
                         >
                             <Email />
                         </a>
@@ -40,10 +53,12 @@ const SOCIAL_ICONS: Record<string, any> = {
                 {
                     phone && (
                         <a
+                            class="button square"
                             href={ `mailto:${ phone }` }
                             title={ `Llamar a ${ name } al número de teléfono ${ phone }` }
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label={ `Llamar a ${ name } al número de teléfono ${ phone }` }
                         >
                             <Phone />
                         </a>
@@ -54,11 +69,13 @@ const SOCIAL_ICONS: Record<string, any> = {
                         const Icon = SOCIAL_ICONS[network]
 
                         return (
-                            <a 
+                            <a
+                                class="button square" 
                                 href={ url }
                                 title={ `Visitar el perfil de ${ name } en ${ network }` }
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                aria-label={ `Visitar el perfil de ${ name } en ${ network }` }
                             >
                                 <Icon />    
                             </a>
@@ -67,9 +84,6 @@ const SOCIAL_ICONS: Record<string, any> = {
                 }
             </footer>
         </div>
-        <figure>
-            <img src={ image } alt={ name }>
-        </figure>
     </div>
 </Section>
 
@@ -77,16 +91,13 @@ const SOCIAL_ICONS: Record<string, any> = {
 <style>
     .container {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: row-reverse;
+        align-items: flex-start;
         justify-content: space-between;
         gap: 1rem;
+        
     }
-
-    .container .info {
-        width: auto;
-    }
-
+    
     .container figure {
         max-width: 150px;
         height: 150px;
@@ -106,14 +117,14 @@ const SOCIAL_ICONS: Record<string, any> = {
     }
 
     .container .info {
+        width: auto;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        padding-right: 32px;
     }
 
     .container .info h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-wrap: pretty;
     }
 
@@ -122,6 +133,14 @@ const SOCIAL_ICONS: Record<string, any> = {
         font-weight: 500;
         color: #444;
         text-wrap: balance;
+    }
+
+    .container .info h3 {
+        font-size: 1rem;
+        font-weight: normal;
+        color: #444;
+        text-wrap: balance;
+        margin-bottom: 16px;
     }
     
     .container .info p {
@@ -136,31 +155,23 @@ const SOCIAL_ICONS: Record<string, any> = {
     .container .info footer {
         display: flex;
         gap: 4px;
-        margin-top: 8px;
+        flex: 1;
     }
 
-    .container .info footer a {
-        color: #777;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #eee;
-        padding: 4px;
-        height: 32px;
-        width: 32px;
-        border-radius: 6px;
-        transition: all 0.5s ease;
-        position: relative;
-        z-index: 1;
+    .container .info footer.print {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .container .info footer a svg {
-        position: relative!important;
-        z-index: -1!important;
-    }
+    @media screen and (max-width: 640px) {
+        .container {
+            flex-wrap: wrap;
+        }
 
-    .container .info footer a:hover {
-        background-color: #eee;
-        border-color: #444;
+        .container figure {
+            width: 100px;
+            height: 100px;
+        }
     }
 </style>

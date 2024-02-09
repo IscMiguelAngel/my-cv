@@ -1,5 +1,76 @@
 ---
 import Section from "@/components/Section.astro"
+
+import { projects } from '@cv'
+import { formatDate, UUID } from '@/js/Functions'
 ---
 
-<Section title="Proyectos"></Section>
+<Section title="Proyectos">
+    <ul class="list">
+        {
+            projects.map(({ name, description, labels, url }) => {
+                return (
+                    <li>
+                        <article>
+                            <header>
+                                <h3>{ url !== "" ? <a href={ url } target="_blank" title={ `Visitar sitio web de ${ name }` }>{ name }</a> : name }</h3>
+                            </header>
+                            <main>
+                                <p>{ description }</p>    
+                            </main>
+                            <footer>
+                                <ul>
+                                    {
+                                        labels.map((label) => <li class="label">{ label }</li>)
+                                    }
+                                </ul>    
+                            </footer>
+                        </article>    
+                    </li>
+                )  
+            })
+        }
+    </ul>
+</Section>
+
+<style>
+    ul.list {
+        display: grid;
+        grid-template-columns: repeat(
+           auto-fill,
+           minmax(250px, 1fr)
+        );
+        gap: 1rem;
+    }
+
+    ul.list li article {
+        border-radius: 8px;
+        border: 1px solid #f2f2f2;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        height: 100%;
+    }
+
+    ul.list li article main {
+        flex: 1;
+    }
+
+    ul.list article footer {
+        height: auto;
+        opacity: 1;
+    }
+
+    ul.list li article footer ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 4px;
+    }
+
+    ul.list li article footer ul li.label {
+        font-size: 0.7rem;
+    }
+</style>

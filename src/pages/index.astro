@@ -1,16 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
-
-import Hero from '@/components/sections/Hero.astro';
-import About from '@/components/sections/About.astro';
-import Education from '@/components/sections/Education.astro';
-import Experience from '@/components/sections/Experience.astro';
-import Projects from '@/components/sections/Projects.astro';
-import Skills from '@/components/sections/Skills.astro';
+import Layout from '../layouts/Layout.astro'
+import Hero from '@/components/sections/Hero.astro'
+import About from '@/components/sections/About.astro'
+import Education from '@/components/sections/Education.astro'
+import Experience from '@/components/sections/Experience.astro'
+import Projects from '@/components/sections/Projects.astro'
+import Skills from '@/components/sections/Skills.astro'
 import KeyboardManager from '@/components/sections/KeyboardManager.astro'
+
+
+import { basics } from '@cv'
 ---
 
-<Layout title="Curriculum Vitae Minimalista.">
+<Layout title={`CV de ${ basics.name } - ${ basics.position }`}>
 	<main>
 		<Hero />
 		<About />
@@ -24,8 +26,14 @@ import KeyboardManager from '@/components/sections/KeyboardManager.astro'
 
 <style>
 	main {
-		padding: 4rem;
+		padding: 4rem 2rem;
 		margin: auto;
 		width: 100%;
+	}
+
+	@media screen and (max-width: 640px) {
+		main {
+			padding: 2rem;
+		}
 	}
 </style>
