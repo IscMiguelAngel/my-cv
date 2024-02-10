@@ -309,6 +309,12 @@
   ],
   "projects": [
     {
+      "name": "Curriculum Vitae minimalista",
+      "description": "Proyecto realizado con el fin de colocar mi CV en línea (con Netlify), y con finalidad de aprendizaje de una nueva tecnología.",
+      "labels": ["Astro", "Javascript"],
+      "url": "https://cv-iscmiguelgonzalez.netlify.app"
+    },
+    {
       "name": "Vezabox App",
       "description": "Aplicación móvil de reproducción de video, con temás de interes, entretenimiento local, educativo, etc.",
       "labels": ["React Native", "Style", "Javascript"],
