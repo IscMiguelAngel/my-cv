@@ -101,7 +101,11 @@ const profilesInfo = profiles.map(({ network, url }) => {
         }
     }
 
-    footer {
+    .help {
+        display: none!important;
+    }
+
+    footer.no-print {
         position: fixed;
         bottom: 0;
         left: 0;
@@ -118,12 +122,18 @@ const profilesInfo = profiles.map(({ network, url }) => {
         animation-range: entry 100% cover 10%;
     }
 
-    footer p {
+    footer.no-print p {
         font-size: 0.8rem;
     }
 
     @media print {
         ninja-keys {
+            display: none!important;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        footer.no-print {
             display: none!important;
         }
     }
