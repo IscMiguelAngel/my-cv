@@ -210,6 +210,15 @@
       ]
     },
     {
+      "name": "Astro",
+      "level": "Básico",
+      "keywords": [
+        "Desarrollo web",
+        "Frontend",
+        "Framework Javascript"
+      ]
+    },
+    {
       "name": "React Native",
       "level": "Intermedio",
       "keywords": [
