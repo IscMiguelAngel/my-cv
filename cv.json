@@ -318,6 +318,12 @@
   ],
   "projects": [
     {
+      "name": "Total Gifs App",
+      "description": "Aplicación web que permite realizar búsquedas de GIFs utilizando la API de Giphy, la aplicación permite descargar los gifs (función destacada ya que originalmente la API de Giphy no permite descargar los gifs).",
+      "labels": ["React JS", "Vite JS", "Javascript", "Fetch API"],
+      "url": "https://totalgifsapp.netlify.app/"
+    },
+    {
       "name": "Curriculum Vitae minimalista",
       "description": "Proyecto realizado con el fin de colocar mi CV en línea (con Netlify), y con finalidad de aprendizaje de una nueva tecnología.",
       "labels": ["Astro", "Javascript"],
