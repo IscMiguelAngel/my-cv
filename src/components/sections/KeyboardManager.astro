@@ -44,14 +44,21 @@ const profilesInfo = profiles.map(({ network, url }) => {
 ---
 
 
-<footer class="no-print">
-    <p>Presiona <kbd>Ctrl/Cmd</kbd> + <kbd>K</kbd> para abrir la paleta de comandos</p>
-</footer>
+<div class="no-print">
+    <p>
+        <kbd>Ctrl/Cmd</kbd>
+        <br>
+        + <kbd>K</kbd>
+    </p>
+</div>
 
 <ninja-keys
+    class="dark"
     placeholder="Buscar comando"
     data-info={ JSON.stringify(profilesInfo) }
     hideBreadcrums
+    hotKeysJoinedView
+    navigationUpHotkey
 ></ninja-keys>
 
 <script>
@@ -105,15 +112,20 @@ const profilesInfo = profiles.map(({ network, url }) => {
         display: none!important;
     }
 
-    footer.no-print {
+    .no-print {
         position: fixed;
-        bottom: 0;
-        left: 0;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
         z-index: 9;
-        width: 100%;
-        padding: 6px;
+        width: auto;
         text-align: center;
         background-color: #eee;
+        border-radius: 5px;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         view-timeline-name: --revealing;
         view-timeline-axis: block;
@@ -122,7 +134,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
         animation-range: entry 100% cover 10%;
     }
 
-    footer.no-print p {
+    .no-print p {
         font-size: 0.8rem;
     }
 
@@ -133,7 +145,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
     }
 
     @media screen and (max-width: 991px) {
-        footer.no-print {
+        .no-print {
             display: none!important;
         }
     }

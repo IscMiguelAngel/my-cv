@@ -10,6 +10,7 @@ import KeyboardManager from '@/components/sections/KeyboardManager.astro'
 
 
 import { basics } from '@cv'
+import Certificates from '@/components/sections/Certificates.astro'
 ---
 
 <Layout title={`Curriculum de ${ basics.name } - ${ basics.position }`}>
@@ -17,10 +18,11 @@ import { basics } from '@cv'
 		<Hero />
 		<About />
 		<Education />
+		<Certificates />
 		<Experience />
 		<Projects />
 		<Skills />
-		<KeyboardManager />
+		<!-- <KeyboardManager /> -->
 	</main>
 </Layout>
 

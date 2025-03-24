@@ -32,11 +32,14 @@ const { title } = Astro.props
 		letter-spacing: -0.025rem;
 	}
 
+	body {
+		background-color: #111111;
+	}
+
 	body, figure, ul, li, p, a, b, strong, i, span, h1, h2, h3, h4, h5, h6 {
 		margin: 0;
 		padding: 0;
 	}
-
 
 	a {
 		text-decoration: none;
@@ -141,12 +144,20 @@ const { title } = Astro.props
 	}
 
 	.list li article header h3, .list li article header h3 a, .list li article header h3 a:link, .list li article header h3 a:visited, .list li article header h3 a:active {
-		color: #333;
+		color: #aaaaaa;
+	}
+
+	.list li article header h4 {
+		color: #888;
 	}
 
 	.list li article header time {
 		color: #888;
 		margin-top: 8px;
+	}
+	
+	.list li article:hover header h3 {
+		color: #fff;
 	}
 
 	.list li article main {

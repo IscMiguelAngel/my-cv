@@ -1,0 +1,38 @@
+---
+import Section from "@/components/Section.astro"
+import { certificates } from '@cv'
+
+import { formatDate } from '@/js/Functions'
+
+---
+
+<Section title="Certificaciones">
+    <ul class="list">
+    {
+        certificates.map(({ name, date, issuer, certificate, url }) => {
+            return (
+                <li>
+                    <article>
+                        <header>
+                            <div>
+                                <h3>{ url !== "" ? <a href={ url } target="_blank" title={ `Visitar sitio de verificación para el certificado ${ name }` }>{ name }</a> : name }</h3>
+                                <h4>Certificado: { certificate }</h4>
+                                <h4>Instructor: { issuer }</h4>
+                            </div>
+                            <time>{ formatDate(date, false, true) }</time>
+                        </header>
+                    </article>    
+                </li>
+            )
+        })
+    }
+    </ul>
+</Section>
+
+<style>
+	@media screen and (max-width: 1024px) {
+		.list li article header {
+			display: block;
+		}
+	}
+</style>

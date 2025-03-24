@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Isc Miguel Angel González de la Rosa",
-    "position": "Desarrollador de software fullstack",
+    "position": "Desarrollador de software",
     "image": "/img/profile.jpg",
     "email": "isc.mangel.glzdelarosa@gmail.com",
     "phone": "(52)8715722559",
     "url": "https://github.com/IscMiguelAngel",
-    "summary": "Con 5 años de experiencia en el mundo de la programación, he crecido profesionalmente aprovechando cada oportunidad que se ha cruzado en mi camino. Actualmente, ocupo el emocionante rol de Programador Web Senior y Líder de Proyectos, un logro que destaco como uno de los hitos más significativos de mi corta pero intensa carrera. Mi capacidad para comprender rápidamente los desafíos técnicos y explorar en código desconocido me ha permitido sobresalir en cada proyecto.",
+    "summary": "Cuento con 5 años de experiencia en programación y he aprovechado cada oportunidad para seguir aprendiendo y creciendo profesionalmente. Actualmente, trabajo como Programador Web Senior y Líder de Proyectos, un rol que me ha permitido desarrollar habilidades tanto técnicas como de gestión. A lo largo de mi carrera, he trabajado en diversos entornos y proyectos, lo que me ha brindado la oportunidad de enfrentar distintos desafíos y aprender de cada experiencia.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -30,15 +30,16 @@
   },
   "work": [
     {
-      "company": "Redzpot Impulso en Imagen",
+      "company": "Redzpot, Impulso en Imagen",
       "position": "Desarrollador web Sr, líder de proyectos",
       "url": "https://redzpot.com",
-      "startDate": "2022-10-01",
+      "startDate": "2022-09-30",
       "endDate": "",
       "summary": "Desarrollador web senior y líder de proyectos con experiencia integral en el diseño y desarrollo de soluciones tecnológicas. Mi expertise abarca tanto el front-end como la implementación de módulos del back-end, con tecnologías como: HTML5, CSS con SASS, Javascript, PHP, MySQL, entre otras; librerías de diseño como: Bootstrap, MDBootstrap, Tailwind; librerías javascript como JQuery, Reacts JS, entre otras.",
       "highlights": [
-        "Como Desarrollador Web Senior y Líder de Proyectos, lidero con pasión para el mantenimiento y desarrollo de proyectos web y aplicaciones móviles.",
-        "Mi enfoque se centra en la implementación eficiente de soluciones, la introducción de nuevos módulos innovadores y la garantía de la excelencia en el rendimiento."
+        "Como Desarrollador de Software, Desarrollador Web Senior y Líder de Proyectos, participo en el mantenimiento y desarrollo de proyectos web y aplicaciones móviles.",
+        "Mi enfoque se centra en la implementación eficiente de soluciones, la introducción de nuevos módulos innovadores y la garantía de la excelencia en el rendimiento.",
+        "Busco optimizar cada proyecto, asegurando escalabilidad, buen rendimiento y calidad en el desarrollo."
       ]
     },
     {
@@ -123,10 +124,38 @@
   "certificates": [
     {
       "name": "La biblia perdida de Bootstrap",
-      "date": "2022-06-01",
+      "date": "2022-06-13",
       "issuer": "Erick Mines / Udemy",
       "certificate": "UC-b69cc497-3cb3-4fb5-8134-133f477cb75f",
       "url": "https://www.udemy.com/certificate/UC-b69cc497-3cb3-4fb5-8134-133f477cb75f/"
+    },
+    {
+      "name": "Fundamentos de la gestión de proyectos",
+      "date": "2024-08-30",
+      "issuer": "Google / Coursera",
+      "certificate": "CXK4EKSMGMVD",
+      "url": "https://coursera.org/verify/CXK4EKSMGMVD"
+    },
+    {
+      "name": "Iniciación del proyecto: Cómo iniciar un proyecto exitoso",
+      "date": "2024-09-30",
+      "issuer": "Google / Coursera",
+      "certificate": "STLYAXIBQ52R",
+      "url": "https://coursera.org/verify/STLYAXIBQ52R"
+    },
+    {
+      "name": "Planificación del proyecto: Reunir todos los elementos",
+      "date": "2024-10-30",
+      "issuer": "Google / Coursera",
+      "certificate": "JKVS595Z0MRV",
+      "url": "https://coursera.org/verify/JKVS595Z0MRV"
+    },
+    {
+      "name": "Ejecución del proyecto: Ejecutar el proyecto",
+      "date": "2024-11-30",
+      "issuer": "Google / Coursera",
+      "certificate": "CXK4EKSMGMVD",
+      "url": "https://coursera.org/verify/CXK4EKSMGMVD"
     }
   ],
   "skills": [
@@ -318,6 +347,12 @@
   ],
   "projects": [
     {
+      "name": "Helpdesk",
+      "description": "Aplicación web para la gestión de tickets, con funcionalidades tales como: creación, edición, eliminación, asignación de tickets, entre otras.",
+      "labels": ["HTML5", "CSS3", "SASS", "Bootstrap 5", "MD Bootstrap", "Javascript", "PHP", "MySQL", "Fetch API"],
+      "url": ""
+    },
+    {
       "name": "Total Gifs App",
       "description": "Aplicación web que permite realizar búsquedas de GIFs utilizando la API de Giphy, la aplicación permite descargar los gifs (función destacada ya que originalmente la API de Giphy no permite descargar los gifs).",
       "labels": ["React JS", "Vite JS", "Javascript", "Fetch API"],
@@ -333,43 +368,43 @@
       "name": "Vezabox App",
       "description": "Aplicación móvil de reproducción de video, con temás de interes, entretenimiento local, educativo, etc.",
       "labels": ["React Native", "Style", "Javascript"],
-      "url": "https://play.google.com/store/apps/details?id=com.vezabox.app"
+      "url": ""
     },
     {
       "name": "Vezabox Adm",
       "description": "CMS para la gestión de contenido, usuarios, anuncios, etc., de la aplicación Vezabox.",
       "labels": ["HTML5", "SASS", "CSS3", "Bootstrap 5", "MD Bootstrap", "PHP", "MySQL"],
-      "url": "https://app.vezabox.com/"
+      "url": ""
     },
     {
       "name": "Vezabox Web",
       "description": "Sitio web desarrollado para funciones específicas de Vezabox tales como: cambio de contraseña, códigos de seguridad, etc. En un futuro se desarrollará un sitio web promocional para Vezabox App.",
       "labels": ["React JS", "Javascript", "HTML5", "CSS3", "SASS"],
-      "url": "https://vezabox.com/"
+      "url": ""
     },
     {
       "name": "Vezabox Api",
       "description": "Api rest desarrollada para la comunicación entre Vezabox App, Vezabox Adm y Vezabox Web.",
       "labels": ["PHP"],
-      "url": "https://vezabox.com/api"
+      "url": ""
     },
     {
       "name": "SICSACID",
       "description": "Sistema de Control y Seguimiento de Artículos para la Revista \"Ciencia, Ingeniería y Desarrollo\" del Tecnológico Superior de Lerdo.",
       "labels": ["HTML5", "CSS3", "Bootstrap 4", "JQuery", "PHP", "MySQL"],
-      "url": "http://sicsacid.itslerdo.edu.mx/"
+      "url": ""
     },
     {
       "name": "Abonos UL",
       "description": "CRM para la administración de clientes y venta de abonos del equipo Algodoneros Unión Laguna.",
       "labels": ["HTML5", "SASS", "CSS3", "JQuery", "PHP", "MySQL"],
-      "url": "https://abonosul.impulsoenimagen.com/"
+      "url": ""
     },
     {
       "name": "CSFQR",
       "description": "Sistema desarrollado especialmente para obtener y procesar información a través de un código QR (tomada mediante CSFQR App) de las Constancias de Situación Fiscal expedidas por el SAT.",
       "labels": ["HTML5", "CSS3", "SASS", "Bootstrap 4", "JQuery", "PHP", "MySQL"],
-      "url": "https://csfqr.impulsoenimagen.com/"
+      "url": ""
     },
     {
       "name": "CSFQR App",
@@ -381,13 +416,13 @@
       "name": "CSFQR Api",
       "description": "Desarrollo de Api rest para la comunicación entre CSFQR y CSFQR App.",
       "labels": ["PHP"],
-      "url": "https://csfqr.impulsoenimagen.com/api"
+      "url": ""
     },
     {
       "name": "Socio Guinda",
       "description": "Plataforma de registro para obtener un código de barras y código QR necesarios para el acceso al estadio Revolución, propiedad del equipo Algodoneros Unión Laguna.",
       "labels": ["HTML5", "CSS3", "Javascript", "PHP", "MySQL"],
-      "url": "https://algodonero.unionlaguna.mx/"
+      "url": ""
     },
     {
       "name": "Redzpotmedia Reproductor",
