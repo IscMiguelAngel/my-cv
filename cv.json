@@ -1,0 +1,627 @@
+{
+    "basics": {
+        "name": "Isc Miguel Angel González de la Rosa",
+        "position": "Desarrollador de software",
+        "image": "/img/profile.jpg",
+        "email": "isc.mangel.glzdelarosa@gmail.com",
+        "phone": "(52)8715722559",
+        "url": "https://github.com/IscMiguelAngel",
+        "summary": "Líder Tecnológico y Desarrollador con 8 años de trayectoria en la industria del software. Mi carrera ha evolucionado desde el desarrollo técnico hacia la coordinación de equipos y proyectos multidisciplinarios, rol que desempeño de manera consolidada desde 2022 (con una experiencia previa liderando equipos de 5 personas en 2018). Mi trabajo se centra en la optimización del ciclo de vida de desarrollo a través de la cultura DevOps e innovación con IA (MiniMax, Claude, GPT). Participo activamente en la definición de roadmaps tecnológicos y en la alineación de arquitecturas con los objetivos de negocio.",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "Gómez Palacio",
+            "state": "Durango",
+            "country": "México",
+            "countryCode": "MX"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "isc-miguel-angel",
+                "url": "https://www.linkedin.com/in/isc-miguel-angel/"
+            },
+            {
+                "network": "GitHub",
+                "username": "IscMiguelAngel",
+                "url": "https://github.com/IscMiguelAngel"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Redzpot, Impulso en Imagen",
+            "position": "Desarrollador web Sr, líder de proyectos",
+            "url": "https://redzpot.com",
+            "startDate": "2022-09-30",
+            "endDate": "",
+            "summary": "Líder de Proyectos y Desarrollador Senior con responsabilidad directa sobre la estrategia tecnológica y el éxito operativo de las plataformas digitales de la organización. Coordino el ciclo completo de vida del software (análisis, diseño, QA, despliegue y soporte), asegurando entregas alineadas con los OKRs de negocio y estándares internacionales de calidad.",
+            "highlights": [
+                "Lidero la definición y ejecución de roadmaps tecnológicos críticos, priorizando desarrollos según impacto, recursos y tiempos de entrega.",
+                "Implementé y superviso estándares de calidad mediante revisiones de código (code review), pruebas unitarias e integración de pipelines de CI/CD para garantizar estabilidad en producción.",
+                "Ejerzo mentoría técnica y gestión de equipos de desarrollo, fomentando una cultura de innovación continua y adopción de tecnologías disruptivas como la IA generativa.",
+                "Gestiono la relación con stakeholders internos y externos, facilitando la comunicación técnica y estratégica para asegurar el cumplimiento de los indicadores de desempeño (KPIs) del área.",
+                "Diseñé e implementé arquitecturas modulares (frameworks propios) que permiten la escalabilidad de los sistemas corporativos y la reducción de la deuda técnica."
+            ]
+        },
+        {
+            "company": "Redzpot Impulso en Imagen",
+            "position": "Desarrollador web",
+            "url": "https://redzpot.com",
+            "startDate": "2020-12-28",
+            "endDate": "2022-09-30",
+            "summary": "Desarrollador web especializado en la expansión y mejora de sistemas existentes, así como en el desarrollo de nuevas aplicaciones abarcando a lo que se llama \"fullstack\", con tecnologías como: HTML5, CSS con SASS, Javascript, PHP, MySQL; librerías de diseño como: Bootstrap, MDBootstrap; librerías Javascript como JQuery, etc.",
+            "highlights": [
+                "Lideré el mantenimiento y la implementación exitosa de módulos críticos en los sistemas Fixccar y Toyota B&P, mejorando la operatividad del negocio.",
+                "Diseñé y desarrollé un ecosistema de publicidad digital autónomo: incluye un administrador web de contenidos y un reproductor autónomo capaz de gestionar descargas inteligentes y reproducción offline en múltiples puntos estratégicos.",
+                "Desarrollé la API core y la plataforma de registro 'Algodonero ID' para el equipo Unión Laguna, integrando códigos QR para el control de acceso al estadio Estadio Revolución y sincronizando datos con una aplicación móvil nativa.",
+                "Implementé un algoritmo de scraping y procesamiento de datos mediante QR para la automatización de reportes operativos, reduciendo significativamente el tiempo de captura manual.",
+                "Diseñé un CRM a medida para la gestión de abonos deportivos, integrando facturación, gestión de inventario de butacas, control de pagos en parcialidades y generación automatizada de tickets digitales."
+            ]
+        },
+        {
+            "company": "AW Software",
+            "position": "Desarrollador web",
+            "url": "https://awsoftware.mx",
+            "startDate": "2019-08-01",
+            "endDate": "2020-12-20",
+            "summary": "Desarrollador Web especializado en la creación de páginas web estáticas y dinámicas, sistemas gestores de contenido, blogs, tiendas en línea, entre otros, aplicando tecnologías tanto frontend como backend.",
+            "highlights": [
+                "Mi enfoque se basa en la implementación de sitios web provenientes del área de diseño gráfico, utilizando HTML5, CSS (compilado con Sass), JavaScript, jQuery, PHP y MySQL para garantizar soluciones web funcionales y visualmente atractivas.",
+                "Experiencia sólida en la creación de páginas web estáticas y dinámicas, abordando diversas necesidades y requerimientos.",
+                "Desarrollo exitoso de sistemas gestores de contenido, permitiendo una administración eficiente y escalable de la información en plataformas web."
+            ]
+        },
+        {
+            "company": "Freelance",
+            "position": "Desarrollador de software",
+            "url": "",
+            "startDate": "2019-08-01",
+            "endDate": "",
+            "summary": "Desarrollador Web Freelance con amplia experiencia en la creación de diversos proyectos, desde sistemas de gestión de contenido hasta páginas web estáticas y dinámicas, así como aplicaciones móviles. Especializado en el uso de tecnologías como JavaScript Vanilla, JQuery, React JS, React Native, Astro y PHP puro. Mi enfoque se centra en la entrega de soluciones personalizadas y eficientes que satisfacen las necesidades únicas de cada cliente. Apasionado por la innovación y la excelencia técnica, estoy disponible para colaborar en proyectos desafiantes y emocionantes.",
+            "highlights": [
+                "He demostrado habilidades en la creación de páginas web tanto estáticas como dinámicas, adaptándome a diferentes requisitos y especificaciones.",
+                "Destaco en la creación exitosa de tiendas en línea, aplicando técnicas efectivas para la gestión de transacciones y la experiencia del usuario en entornos de comercio electrónico.",
+                "Mi experiencia se extiende al desarrollo de diversas aplicaciones web, abordando desde proyectos simples hasta soluciones complejas y de gran escala.",
+                "He implementado sistemas de gestión de contenido (CMS) para facilitar la administración y actualización eficientes de contenido en plataformas web.",
+                "Contribuyo con conocimientos en la configuración de sistemas CRM, mejorando las interacciones y la gestión de relaciones con los clientes.",
+                "Diseño y desarrollo de APIs robustas para facilitar la comunicación efectiva entre diferentes sistemas y aplicaciones.",
+                "He participado en la creación exitosa de aplicaciones móviles, ampliando mi contribución al ecosistema digital."
+            ]
+        },
+        {
+            "company": "Instituto Tecnológico Superior Nacional de Lerdo",
+            "position": "Desarrollador web, líder de proyectos",
+            "url": "https://www.lerdo.tecnm.mx/",
+            "startDate": "2018-04-01",
+            "endDate": "2018-10-01",
+            "summary": "Desarrollador web, participante en el desarrollo de la plataforma SICSACID, en la cual estuve encargado de liderar al equipo de trabajo conformado por 5 personas, fui seleccionado para desarrollar 2 de los 5 módulos del backend, también para construir totalmente el frontend, además de implementar el registro, inicio de sesión y recuperación de contraseña.",
+            "highlights": [
+                "Durante mis prácticas profesionales, lideré de manera efectiva mi equipo, ayudando a que alcanzáramos nuestros objetivos.",
+                "Coordiné las tareas, fomenté un ambiente colaborativo y aseguré que todos estuvieran en sintonía con los objetivos del proyecto.",
+                "Mi enfoque proactivo y habilidades de liderazgo fueron clave para el éxito, mostrando mi capacidad para inspirar y dirigir al equipo hacia el logro de metas compartidas."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Instituto Tecnológico Superior Nacional de Lerdo",
+            "url": "https://www.lerdo.tecnm.mx/",
+            "area": "Sistemas Computacionales",
+            "studyType": "Ingeniería",
+            "startDate": "2014-08-14",
+            "endDate": "2018-11-30",
+            "specialty": "Bases de Datos",
+            "cedula": "13604055",
+            "verification_url": "https://cedulaprofesional.sep.gob.mx/"
+        },
+        {
+            "institution": "Colegio de Bachilleres del Estado de Durango",
+            "url": "https://cobaed.mx",
+            "area": "Programación .NET",
+            "studyType": "Bachiller",
+            "startDate": "2011-08-14",
+            "endDate": "2014-06-30",
+            "specialty": "Programación .NET"
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Fundamentos de la gestión de proyectos",
+            "date": "2024-08-30",
+            "issuer": "Google / Coursera",
+            "certificate": "DGJG6H4XZ5JE",
+            "url": "https://coursera.org/verify/DGJG6H4XZ5JE"
+        },
+        {
+            "name": "Iniciación del proyecto: Cómo iniciar un proyecto exitoso",
+            "date": "2024-09-30",
+            "issuer": "Google / Coursera",
+            "certificate": "STLYAXIBQ52R",
+            "url": "https://coursera.org/verify/STLYAXIBQ52R"
+        },
+        {
+            "name": "Planificación del proyecto: Reunir todos los elementos",
+            "date": "2024-10-30",
+            "issuer": "Google / Coursera",
+            "certificate": "JKVS595Z0MRV",
+            "url": "https://coursera.org/verify/JKVS595Z0MRV"
+        },
+        {
+            "name": "Ejecución del proyecto: Ejecutar el proyecto",
+            "date": "2024-11-30",
+            "issuer": "Google / Coursera",
+            "certificate": "CXK4EKSMGMVD",
+            "url": "https://coursera.org/verify/CXK4EKSMGMVD"
+        },
+        {
+            "name": "La biblia perdida de Bootstrap",
+            "date": "2022-06-13",
+            "issuer": "Erick Mines / Udemy",
+            "certificate": "UC-b69cc497-3cb3-4fb5-8134-133f477cb75f",
+            "url": "https://www.udemy.com/certificate/UC-b69cc497-3cb3-4fb5-8134-133f477cb75f/"
+        }
+    ],
+    "skills": [
+        {
+            "name": "HTML",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo web",
+                "Frontend",
+                "Maquetación"
+            ]
+        },
+        {
+            "name": "CSS",
+            "level": "Intermedio - Avanzado",
+            "keywords": [
+                "Desarrollo web",
+                "Frontend",
+                "Diseño",
+                "Estilado"
+            ]
+        },
+        {
+            "name": "SASS / SCSS",
+            "level": "Intermedio",
+            "keywords": [
+                "Desarrollo web",
+                "Frontend",
+                "Diseño",
+                "CSS",
+                "Compilador CSS"
+            ]
+        },
+        {
+            "name": "Bootstrap",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo web",
+                "Frontend",
+                "Diseño",
+                "Framework CSS",
+                "Diseño Responsive"
+            ]
+        },
+        {
+            "name": "Tailwind",
+            "level": "Intermedio",
+            "keywords": [
+                "Desarrollo web",
+                "Frontend",
+                "Diseño",
+                "Framework CSS",
+                "Diseño Responsive"
+            ]
+        },
+        {
+            "name": "Javascript",
+            "level": "Intermedio - Avanzado",
+            "keywords": [
+                "Desarrollo web",
+                "Frontend",
+                "Ecmascript",
+                "Fetch API",
+                "JSON",
+                "Vite JS"
+            ]
+        },
+        {
+            "name": "JQuery",
+            "level": "Intermedio - Avanzado",
+            "keywords": [
+                "Desarrollo web",
+                "Frontend",
+                "Librería Javascript"
+            ]
+        },
+        {
+            "name": "React JS",
+            "level": "Intermedio",
+            "keywords": [
+                "Desarrollo web",
+                "Frontend",
+                "Librería Javascript"
+            ]
+        },
+        {
+            "name": "Astro",
+            "level": "Intermedio",
+            "keywords": [
+                "Desarrollo web",
+                "Frontend",
+                "Framework Javascript"
+            ]
+        },
+        {
+            "name": "React Native",
+            "level": "Intermedio",
+            "keywords": [
+                "Desarrollo web",
+                "Frontend",
+                "Librería Javascript"
+            ]
+        },
+        {
+            "name": "Node.js",
+            "level": "Intermedio",
+            "keywords": [
+                "Entorno de ejecución",
+                "Servidores",
+                "NPM",
+                "Backend JS"
+            ]
+        },
+        {
+            "name": "Next.js",
+            "level": "Intermedio",
+            "keywords": [
+                "React JS",
+                "SSR / SSG",
+                "Vercel (Despliegues)",
+                "Framework Moderno"
+            ]
+        },
+        {
+            "name": "PHP",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo web",
+                "Backend",
+                "Servidor",
+                "Custom Frameworks",
+                "Conekta (Pasarela de Pagos)",
+                "REST APIs"
+            ]
+        },
+        {
+            "name": "Laravel",
+            "level": "Básico",
+            "keywords": [
+                "Desarrollo web",
+                "Backend",
+                "Servidor",
+                "Framework PHP"
+            ]
+        },
+        {
+            "name": "MYSQL",
+            "level": "Intermedio - Avanzado",
+            "keywords": [
+                "Backend",
+                "Bases de datos",
+                "SQL",
+                "Almacenamiento de datos"
+            ]
+        },
+        {
+            "name": "SQL Server",
+            "level": "Básico - Intermedio",
+            "keywords": [
+                "Backend",
+                "Bases de datos",
+                "SQL",
+                "Almacenamiento de datos"
+            ]
+        },
+        {
+            "name": "PostgreeSQL",
+            "level": "Básico",
+            "keywords": [
+                "Backend",
+                "Bases de datos",
+                "SQL",
+                "Almacenamiento de datos"
+            ]
+        },
+        {
+            "name": "Git",
+            "level": "Básico - Intermedio",
+            "keywords": [
+                "Control de versiones",
+                "Colaboración",
+                "Código Fuente"
+            ]
+        },
+        {
+            "name": "GitHub",
+            "level": "Básico",
+            "keywords": [
+                "Control de versiones",
+                "Colaboración",
+                "Código Fuente",
+                "Git"
+            ]
+        },
+        {
+            "name": "Python",
+            "level": "Intermedio",
+            "keywords": [
+                "Microservicios",
+                "Web Scraping (BeautifulSoup/Selenium)",
+                "Automatización",
+                "Integración con IA"
+            ]
+        },
+        {
+            "name": "Linux (Servidores)",
+            "level": "Intermedio",
+            "keywords": [
+                "Ubuntu / Debian",
+                "SSH",
+                "Administración de Servidores",
+                "Configuración de Entornos"
+            ]
+        },
+        {
+            "name": "Ionic & Angular",
+            "level": "Intermedio",
+            "keywords": [
+                "Desarrollo Híbrido",
+                "Mobile Apps",
+                "TypeScript",
+                "SPA"
+            ]
+        },
+        {
+            "name": "Gestión de Proyectos & Liderazgo",
+            "level": "Avanzado",
+            "keywords": [
+                "Metodologías Ágiles",
+                "Scrum / Kanban",
+                "Google Project Management",
+                "Planificación de Roadmaps",
+                "Gestión de Stakeholders",
+                "OKRs & KPIs"
+            ]
+        },
+        {
+            "name": "Arquitectura de Software",
+            "level": "Intermedio",
+            "keywords": [
+                "Microservicios",
+                "APIs REST / Event-driven",
+                "Patrones de Diseño",
+                "Escalabilidad",
+                "Refactorización"
+            ]
+        },
+        {
+            "name": "DevOps & CI/CD",
+            "level": "Intermedio",
+            "keywords": [
+                "GitHub Actions",
+                "Vercel (Despliegues)",
+                "Automatización de Despliegues",
+                "Pipelines de Calidad",
+                "Cultura DevOps",
+                "Mejora Continua"
+            ]
+        },
+        {
+            "name": "Seguridad e Infraestructura Cloud",
+            "level": "Básico - Intermedio",
+            "keywords": [
+                "OWASP (Seguridad en aplicaciones)",
+                "HTTPS / Certificados",
+                "AWS / Azure / GCP (Nociones)",
+                "Gobernanza de Datos",
+                "Gestión de Riesgos Técnicos"
+            ]
+        },
+        {
+            "name": "Competencias Directivas",
+            "level": "Avanzado",
+            "keywords": [
+                "Toma de decisiones bajo incertidumbre",
+                "Negociación y Gestión de expectativas",
+                "Comunicación efectiva a todo nivel",
+                "Inteligencia Emocional y Empatía",
+                "Visión Estratégica del Negocio"
+            ]
+        },
+        {
+            "name": "IA & Prompt Engineering",
+            "level": "Avanzado",
+            "keywords": [
+                "MiniMax M2.5 Free",
+                "Claude (Sonnet/Opus 3.5/4.6)",
+                "GPT-4/o/5.2 (ChatGPT/API)",
+                "Gemini 1.5 Pro/3.1",
+                "RAG (Retrieval-Augmented Generation)",
+                "Agentes de IA & Workflows Autónomos",
+                "Prompting: Chain-of-Thought (CoT)",
+                "Zero-shot / Few-shot Learning",
+                "Optimización de Ventanas de Contexto",
+                "Gestión de Tokens y Memoria de IA",
+                "Open Code Models"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Español",
+            "fluency": "Nativo"
+        },
+        {
+            "language": "Inglés",
+            "fluency": "Básico"
+        }
+    ],
+    "references": [],
+    "projects": [
+        {
+            "name": "Curriculum Vitae minimalista",
+            "description": "Proyecto realizado con el fin de colocar mi CV en línea (con Netlify), y con finalidad de aprendizaje de una nueva tecnología.",
+            "labels": [
+                "Astro",
+                "Javascript",
+                "Json"
+            ],
+            "url": "https://cv-iscmiguelgonzalez.netlify.app"
+        },
+        {
+            "name": "Ecosistema Helpdesk",
+            "description": "Aplicación web para la gestión de tickets, con funcionalidades tales como: creación, asignación, atención de tickets, entre otras. El ecosistema cuenta con 3 aplicaciones: Helpdesk Web, Helpdesk Api y Helpdesk App, permitiendo la gestión de tickets de manera eficiente y segura desde cualquier dispositivo.",
+            "labels": [
+                "HTML5",
+                "CSS3",
+                "SASS",
+                "Bootstrap 5",
+                "MD Bootstrap",
+                "Javascript",
+                "PHP",
+                "MySQL",
+                "Fetch API"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Control de Demos",
+            "description": "Plataforma corporativa para el control y seguimiento de vehículos de demostración del Grupo Valmur. Automatiza el flujo de solicitudes, autorizaciones gerenciales y control de tiempos de uso, implementada sobre un framework propio de PHP altamente modular e inteligente.",
+            "labels": [
+                "PHP",
+                "MySQL",
+                "Custom Framework",
+                "JQuery",
+                "SASS",
+                "Process Automation"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Ecosistema CSFQR",
+            "description": "Sistema avanzado para el procesamiento automatizado de Constancias de Situación Fiscal del SAT. Comprende una aplicación móvil para captura de códigos QR (Ionic/Angular), un motor de procesamiento de datos y una API de integración para la generación de reportes y almacenamiento seguro.",
+            "labels": [
+                "Ionic",
+                "Angular",
+                "PHP",
+                "MySQL",
+                "SASS",
+                "Bootstrap 4",
+                "QR Processing"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Plataformas Digitales Unión Laguna",
+            "description": "Desarrollo de soluciones tecnológicas para el equipo de béisbol profesional, incluyendo el sistema 'Abonos UL' (CRM para gestión de ventas y localidades del estadio) y la plataforma 'Socio Guinda' para el registro y control de acceso mediante códigos QR y códigos de barras.",
+            "labels": [
+                "PHP",
+                "MySQL",
+                "Javascript",
+                "JQuery",
+                "SASS",
+                "QR/Barcode Integration"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Ecosistema Redzpotmedia",
+            "description": "Sistema de reproducción de contenidos publicitarios para puntos de alto impacto, con actualización de listas de reproducción y sincronización automática.",
+            "labels": [
+                "HTML5",
+                "CSS3",
+                "SASS",
+                "JQuery",
+                "PHP",
+                "MySQL",
+                "Fetch API"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Ecosistema Vezabox",
+            "description": "Solución integral de entretenimiento y gestión de contenidos que incluye: Aplicación móvil de reproducción de video (React Native), CMS administrativo para gestión de anuncios y usuarios (PHP/MySQL), sitio web de servicios y una API REST robusta para la intercomunicación del sistema.",
+            "labels": [
+                "React Native",
+                "React JS",
+                "PHP",
+                "MySQL",
+                "SASS",
+                "Bootstrap 5",
+                "REST API"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Qabuu",
+            "description": "Plataforma inmobiliaria para la venta y renta de espacios comerciales. Participación en el desarrollo total del frontend y módulos críticos del backend.",
+            "labels": [
+                "PHP",
+                "MySQL",
+                "JQuery",
+                "Conekta API",
+                "SASS"
+            ],
+            "url": ""
+        },
+        {
+            "name": "SICSACID",
+            "description": "Sistema de Control y Seguimiento de Artículos para revista científica, con gestión de flujo de revisión y publicación.",
+            "labels": [
+                "PHP",
+                "MySQL",
+                "Bootstrap 4",
+                "JQuery"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Sivalid",
+            "description": "Herramienta de validación de identidad (hobbie) mediante web scraping avanzado al portal REPUVE. Integra microservicios en Python con Laravel y sistemas de bypass antibot (2Captcha). Proyecto desarrollado íntegramente mediante flujos de IA (Claude/MiniMax), demostrando integración técnica compleja y supervisión experta.",
+            "labels": [
+                "Laravel",
+                "Python",
+                "Microservices",
+                "Web Scraping",
+                "AI-Assisted Development",
+                "2Captcha"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Total Gifs App",
+            "description": "Aplicación web (hobbie) que permite realizar búsquedas de GIFs utilizando la API de Giphy, la aplicación permite descargar los gifs (función destacada ya que originalmente la API de Giphy no permite descargar los gifs).",
+            "labels": [
+                "React JS",
+                "Vite JS",
+                "Javascript",
+                "Fetch API"
+            ],
+            "url": "https://totalgifsapp.netlify.app/"
+        },
+        {
+            "name": "Emojio",
+            "description": "Aplicación web (hobbie) que permite realizar búsquedas de emojis utilizando la librería (NPM) emojibase-data. La aplicación permite buscar y copiar emojis al portapapeles para su uso en cualquier plataforma.",
+            "labels": [
+                "React JS",
+                "Vite JS",
+                "Javascript",
+                "Fetch API"
+            ],
+            "url": "https://emojio.ankeldevs.com/"
+        }
+    ]
+}

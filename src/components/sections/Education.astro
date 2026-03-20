@@ -1,0 +1,69 @@
+---
+import Section from "@/components/Section.astro"
+import { education } from '@cv'
+
+import { formatDate } from '@/js/Functions'
+
+---
+
+<Section title="Educación">
+    <ul class="list">
+    {
+        education.map(({ institution, url, area, studyType, startDate, endDate, specialty, cedula, verification_url }) => {
+            return (
+                <li>
+                    <article>
+                        <header>
+                            <div>
+                                <h3>{ url !== "" ? <a href={ url } target="_blank" title={ `Visitar sitio web de ${ institution }` }>{ institution }</a> : institution }</h3>    
+                                <h4>{ studyType } en { area } con especialidad en { specialty }</h4>
+                                { cedula && (
+                                    <p class="cedula">
+                                        Cédula Profesional: <span>{ cedula }</span>
+                                        { verification_url && (
+                                            <a href={ verification_url } target="_blank" title="Verificar Cédula Profesional en el portal oficial de la SEP">
+                                                (Verificar)
+                                            </a>
+                                        )}
+                                    </p>
+                                )}
+                            </div>
+                            <time>{ formatDate(startDate, false, true) } - { formatDate(endDate, false, true) }</time>
+                        </header>
+                    </article>    
+                </li>
+            )
+        })
+    }
+    </ul>
+</Section>
+
+<style>
+	@media screen and (max-width: 1024px) {
+		.list li article header {
+			display: block;
+		}
+	}
+
+    .cedula {
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 4px;
+    }
+
+    .cedula span {
+        font-weight: 600;
+        color: #444;
+    }
+
+    .cedula a {
+        margin-left: 8px;
+        color: #0076ff;
+        text-decoration: underline;
+        font-size: 0.8rem;
+    }
+
+    .cedula a:hover {
+        color: #0056b3;
+    }
+</style>

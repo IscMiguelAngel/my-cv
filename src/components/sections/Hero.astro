@@ -1,0 +1,187 @@
+---
+import { Image } from "astro:assets";
+import { basics } from "@cv";
+import Section from "@/components/Section.astro";
+import Email from "@/icons/Email.astro";
+import Phone from "@/icons/Phone.astro";
+import GitHub from "@/icons/GitHub.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import WordMap from "@/icons/WordMap.astro";
+
+const {
+    name,
+    position,
+    image,
+    email,
+    phone,
+    url,
+    summary,
+    location,
+    profiles,
+} = basics;
+const { city, state, country } = location;
+const SOCIAL_ICONS: Record<string, any> = {
+    GitHub,
+    LinkedIn,
+};
+---
+
+<Section>
+    <div class="container">
+        <figure>
+            <Image src={image} alt={name} width={150} height={150} />
+        </figure>
+        <div class="info">
+            <div>
+                <h1>{name}</h1>
+                <h2>{position}</h2>
+            </div>
+            <h3>
+                <WordMap />
+                {city}, {state}, {country}
+            </h3>
+            <footer class="print">
+                <p>{(<Phone />)}8715712559</p>
+                <p>{(<Email />)}isc.mangel.glzdelarosa@gmail.com</p>
+                <p><LinkedIn /> isc-miguel-angel</p>
+                <p><GitHub /> IscMiguelAngel</p>
+            </footer>
+            <footer class="no-print">
+                {
+                    email && (
+                        <a
+                            class="button square"
+                            href={`mailto:${email}`}
+                            title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`Enviar un correo electrónico a ${name} al correo ${email}`}
+                        >
+                            <Email />
+                        </a>
+                    )
+                }
+                {
+                    phone && (
+                        <a
+                            class="button square"
+                            href={`mailto:${phone}`}
+                            title={`Llamar a ${name} al número de teléfono ${phone}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`Llamar a ${name} al número de teléfono ${phone}`}
+                        >
+                            <Phone />
+                        </a>
+                    )
+                }
+                {
+                    profiles.map(({ network, username, url }) => {
+                        const Icon = SOCIAL_ICONS[network];
+
+                        return (
+                            <a
+                                class="button square"
+                                href={url}
+                                title={`Visitar el perfil de ${name} en ${network}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={`Visitar el perfil de ${name} en ${network}`}
+                            >
+                                <Icon />
+                            </a>
+                        );
+                    })
+                }
+            </footer>
+        </div>
+    </div>
+</Section>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .container figure {
+        max-width: 150px;
+        height: 150px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 6px;
+    }
+
+    .container figure img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    .container .info {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .container .info h1 {
+        color: #444;
+        font-size: 1.5rem;
+        text-wrap: pretty;
+    }
+
+    .container .info h2 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #4f4f4f;
+        text-wrap: balance;
+    }
+
+    .container .info h3 {
+        font-size: 1rem;
+        font-weight: normal;
+        color: #4f4f4f;
+        text-wrap: balance;
+        margin-bottom: 16px;
+    }
+
+    .container .info p {
+        color: #666;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: 0.85rem;
+        letter-spacing: -0.05rem;
+    }
+
+    .container .info footer {
+        display: flex;
+        gap: 4px;
+        flex: 1;
+    }
+
+    .container .info footer.print {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 640px) {
+        .container {
+            flex-wrap: wrap;
+        }
+
+        .container figure {
+            width: 100px;
+            height: 100px;
+        }
+    }
+</style>

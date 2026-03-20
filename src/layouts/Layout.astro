@@ -1,0 +1,207 @@
+---
+interface Props {
+	title: string
+}
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{ title }</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	* {
+		box-sizing: border-box;
+	}
+	
+	html {
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		background-color: #fff;
+		letter-spacing: -0.025rem;
+	}
+
+	body {
+		background-color: #ededed;
+	}
+
+	body, figure, ul, li, p, a, b, strong, i, span, h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	}
+
+	p, li, p, a, b, strong, i, span, time {
+		color: #666;
+		font-size: .8rem;
+		line-height: 1.5;
+		text-wrap: pretty;
+	}
+
+	.bg-transparent {
+		background-color: transparent;
+	}
+
+	.bg-gray {
+		background-color: #777;
+	}
+
+	.button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #9e9d9d;
+        padding: 4px;
+        border-radius: 6px;
+        transition: all 0.5s ease;
+        position: relative;
+		cursor: pointer;
+        z-index: 1;
+	}
+
+	.button:hover {
+        background-color: #eee;
+        border-color: #000000;
+    }
+
+	.button.square {
+        width: 32px;
+        height: 32px;
+	}
+
+	.button.square.square-sm {
+        width: 16px;
+        height: 16px;
+	}
+
+	.button.square.square-md {
+        width: 32px;
+        height: 32px;
+	}
+
+	.button.square.square-lg {
+        width: 64px;
+        height: 64px;
+	}
+
+	.label {
+		padding: 3px 8px;
+		background-color: #c8c8c8;
+		border: 1px solid #444;
+		color: #333;
+		border-radius: 6px;
+	}
+
+	.list {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.list li article header {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 32px;
+		margin-bottom: 8px;
+	}
+
+	.list li article header h4 {
+		color: #222;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.3;
+	}
+
+	.list li article header h3, .list li article header h3 a {
+		font-size: 1.2rem;
+		font-weight: 500;
+		line-height: 1.3;
+		margin-bottom: 0;
+	}
+
+	.list li article header h3, .list li article header h3 a, .list li article header h3 a:link, .list li article header h3 a:visited, .list li article header h3 a:active {
+		color: #444;
+	}
+
+	.list li article header h4 {
+		color: #444;
+	}
+
+	.list li article header time {
+		color: #888;
+		margin-top: 8px;
+	}
+	
+	.list li article:hover header h3 {
+		color: #000;
+	}
+
+	.list li article main {
+		position: relative;
+		margin-bottom: 24px;
+	}
+
+	.list li article main button {
+		position: absolute;
+		top: auto;
+		right: 0;
+		bottom: -16px;
+		left: auto;
+	}
+
+	.list li article footer {
+		height: 0;
+		opacity: 0;
+		transition: all 0.5s ease-in-out;
+	}
+
+	.list li article footer.show {
+		height: auto;
+		opacity: 1;
+	}
+
+
+	.list li article footer ul {
+		list-style: inside;
+	}
+	
+	@media print {
+		.no-print {
+			display: none!important;
+		}
+	}
+
+	.print {
+		display: none!important;
+	}
+
+	@media print {
+		.print {
+			display: block!important;
+		}
+	}
+</style>

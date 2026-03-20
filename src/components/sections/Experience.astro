@@ -1,0 +1,40 @@
+---
+import Section from "@/components/Section.astro"
+import { work } from '@cv'
+
+import { formatDate, UUID } from '@/js/Functions'
+---
+
+<Section title="Experiencia">
+    <ul class="list">
+    {
+        work.map(({ company, position, url, startDate, endDate, summary, highlights }, index) => {
+            const uuid = UUID()
+            return (
+                <li id={ uuid }>
+                    <article>
+                        <header>
+                            <div>
+                                <h3>{ url !== "" ? <a href={ url } target="_blank" title={ `Visitar sitio web de ${ company }` }>{ company }</a> : company }</h3>
+                                <h4>{ position }</h4>
+                            </div>
+                            <time>{ formatDate(startDate, false, true) } - { formatDate(endDate, false, true) }</time>            
+                        </header>
+                        <main>
+                            <p>{ summary }</p>
+                        </main>
+                    </article>    
+                </li>
+            )
+        })
+    }
+    </ul>
+</Section>
+
+<style>
+	@media screen and (max-width: 768px) {
+		.list li article header {
+			display: block;
+		}
+	}
+</style>
