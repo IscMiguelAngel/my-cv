@@ -26,12 +26,7 @@ const { title } = Astro.props
 				<span>Imprimir</span>
 			</button>
 		</div>
-
-		<script is:inline>
-			document.getElementById('print-button')?.addEventListener('click', () => {
-				window.print();
-			});
-		</script>
+		<script is:inline src="/js/print.js"></script>
 	</body>
 </html>
 

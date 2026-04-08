@@ -7,9 +7,9 @@ import { skills } from '@cv'
 <Section title="Conocimientos / Habilidades">
     <ul>
     {
-        skills.map(({ name, level, keywords }) => {
+        skills.map(({ name, level }) => {
             return (
-                <li class="label">{ name }</li>
+                <li class="label" title={level}>{ name }</li>
             )
         })
     }

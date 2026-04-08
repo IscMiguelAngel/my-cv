@@ -29,7 +29,7 @@ const SOCIAL_ICONS: Record<string, any> = {
 <Section>
     <div class="container">
         <figure>
-            <Image src={image} alt={name} width={150} height={150} />
+            <Image src={image} alt={name} width={150} height={150} loading="eager" />
         </figure>
         <div class="info">
             <div>
@@ -41,8 +41,8 @@ const SOCIAL_ICONS: Record<string, any> = {
                 {city}, {state}, {country}
             </h3>
             <footer class="print">
-                <p>{(<Phone />)}8715712559</p>
-                <p>{(<Email />)}isc.mangel.glzdelarosa@gmail.com</p>
+                <p>{(<Phone />)}{phone}</p>
+                <p>{(<Email />)}{email}</p>
                 <p><LinkedIn /> isc-miguel-angel</p>
                 <p><GitHub /> IscMiguelAngel</p>
             </footer>
