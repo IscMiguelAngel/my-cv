@@ -1,69 +1,134 @@
 ---
-import Section from "@/components/Section.astro"
 import { education } from '@cv'
-
 import { formatDate } from '@/js/Functions'
-
 ---
 
-<Section title="Educación">
-    <ul class="list">
+<section class="education">
+    <h2 class="section-title">FORMACIÓN ACADÉMICA</h2>
+    <ul class="education-list">
     {
         education.map(({ institution, url, area, studyType, startDate, endDate, specialty, cedula, verification_url }) => {
             return (
-                <li>
-                    <article>
-                        <header>
-                            <div>
-                                <h3>{ url !== "" ? <a href={ url } target="_blank" title={ `Visitar sitio web de ${ institution }` }>{ institution }</a> : institution }</h3>    
-                                <h4>{ studyType } en { area } con especialidad en { specialty }</h4>
-                                { cedula && (
-                                    <p class="cedula">
-                                        Cédula Profesional: <span>{ cedula }</span>
-                                        { verification_url && (
-                                            <a href={ verification_url } target="_blank" title="Verificar Cédula Profesional en el portal oficial de la SEP">
-                                                (Verificar)
-                                            </a>
-                                        )}
-                                    </p>
-                                )}
-                            </div>
-                            <time>{ formatDate(startDate, false, true) } - { formatDate(endDate, false, true) }</time>
-                        </header>
-                    </article>    
+                <li class="education-item">
+                    <div class="item-header">
+                        <div class="item-title">
+                            <h3>{studyType} en {area}</h3>
+                            <span class="institution">
+                                {url !== "" ? <a href={url} target="_blank" rel="noopener noreferrer">{institution}</a> : institution}
+                            </span>
+                            {specialty && <span class="specialty">Especialidad: {specialty}</span>}
+                        </div>
+                        <time class="item-date">{formatDate(startDate, false, true)} - {formatDate(endDate, false, true)}</time>
+                    </div>
+                    {cedula && (
+                        <p class="cedula">
+                            Cédula Profesional: <span>{cedula}</span>
+                            {verification_url && (
+                                <a href={verification_url} target="_blank" rel="noopener noreferrer">Verificar</a>
+                            )}
+                        </p>
+                    )}
                 </li>
             )
         })
     }
     </ul>
-</Section>
+</section>
 
 <style>
-	@media screen and (max-width: 1024px) {
-		.list li article header {
-			display: block;
-		}
-	}
+    .education {
+        padding: 1.5rem 2rem;
+    }
+
+    .section-title {
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-primary);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .education-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .education-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .item-title h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--color-primary);
+        margin: 0;
+    }
+
+    .item-title .institution {
+        font-size: 0.875rem;
+        color: var(--color-secondary);
+    }
+
+    .item-title .institution a {
+        color: var(--color-secondary);
+        text-decoration: none;
+    }
+
+    .item-title .institution a:hover {
+        color: var(--color-primary);
+        text-decoration: underline;
+    }
+
+    .item-title .specialty {
+        display: block;
+        font-size: 0.8rem;
+        color: var(--color-muted);
+        margin-top: 0.25rem;
+    }
+
+    .item-date {
+        font-size: 0.8rem;
+        color: var(--color-muted);
+        white-space: nowrap;
+    }
 
     .cedula {
-        font-size: 0.85rem;
-        color: #666;
-        margin-top: 4px;
+        font-size: 0.8rem;
+        color: var(--color-muted);
+        margin-top: 0.25rem;
     }
 
     .cedula span {
         font-weight: 600;
-        color: #444;
+        color: var(--color-secondary);
     }
 
     .cedula a {
-        margin-left: 8px;
-        color: #0076ff;
-        text-decoration: underline;
-        font-size: 0.8rem;
+        margin-left: 0.5rem;
+        font-size: 0.75rem;
     }
 
-    .cedula a:hover {
-        color: #0056b3;
+    @media screen and (max-width: 640px) {
+        .item-header {
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .item-date {
+            order: -1;
+        }
     }
 </style>

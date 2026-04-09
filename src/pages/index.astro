@@ -2,40 +2,23 @@
 import Layout from '../layouts/Layout.astro'
 import Hero from '@/components/sections/Hero.astro'
 import About from '@/components/sections/About.astro'
-import Education from '@/components/sections/Education.astro'
 import Experience from '@/components/sections/Experience.astro'
-import Projects from '@/components/sections/Projects.astro'
+import Education from '@/components/sections/Education.astro'
 import Skills from '@/components/sections/Skills.astro'
-import KeyboardManager from '@/components/sections/KeyboardManager.astro'
-
+import Certificates from '@/components/sections/Certificates.astro'
+import Projects from '@/components/sections/Projects.astro'
 
 import { basics } from '@cv'
-import Certificates from '@/components/sections/Certificates.astro'
 ---
 
-<Layout title={`Curriculum de ${ basics.name } - ${ basics.position }`}>
-	<main>
+<Layout title={`Curriculum de ${basics.name} - ${basics.position}`}>
+	<div class="container">
 		<Hero />
 		<About />
-		<Education />
-		<Certificates />
 		<Experience />
-		<Projects />
+		<Education />
 		<Skills />
-		<!-- <KeyboardManager /> -->
-	</main>
+		<Certificates />
+		<Projects />
+	</div>
 </Layout>
-
-<style>
-	main {
-		padding: 4rem 2rem;
-		margin: auto;
-		width: 100%;
-	}
-
-	@media screen and (max-width: 640px) {
-		main {
-			padding: 2rem;
-		}
-	}
-</style>

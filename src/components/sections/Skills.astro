@@ -1,27 +1,53 @@
 ---
-import Section from "@/components/Section.astro"
-
 import { skills } from '@cv'
 ---
 
-<Section title="Conocimientos / Habilidades">
-    <ul>
+<section class="skills">
+    <h2 class="section-title">HABILIDADES Y CONOCIMIENTOS</h2>
+    <ul class="skills-list">
     {
         skills.map(({ name, level }) => {
             return (
-                <li class="label" title={level}>{ name }</li>
+                <li class="skill-item" title={level}>{ name }</li>
             )
         })
     }
     </ul>
-</Section>
+</section>
 
 <style>
-    ul {
-        display: inline-flex;
-        flex-direction: row;
+    .skills {
+        padding: 1.5rem 2rem;
+    }
+
+    .section-title {
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-primary);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .skills-list {
+        display: flex;
         flex-wrap: wrap;
-        align-items: center;
         gap: 0.5rem;
+    }
+
+    .skill-item {
+        padding: 0.35rem 0.75rem;
+        background-color: var(--color-bg-secondary);
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        font-size: 0.8rem;
+        color: var(--color-secondary);
+    }
+
+    .skill-item:hover {
+        border-color: var(--color-primary);
+        color: var(--color-primary);
     }
 </style>

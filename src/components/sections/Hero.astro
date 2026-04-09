@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import { basics } from "@cv";
-import Section from "@/components/Section.astro";
 import Email from "@/icons/Email.astro";
 import Phone from "@/icons/Phone.astro";
 import GitHub from "@/icons/GitHub.astro";
@@ -15,7 +14,6 @@ const {
     email,
     phone,
     url,
-    summary,
     location,
     profiles,
 } = basics;
@@ -26,162 +24,140 @@ const SOCIAL_ICONS: Record<string, any> = {
 };
 ---
 
-<Section>
-    <div class="container">
-        <figure>
-            <Image src={image} alt={name} width={150} height={150} loading="eager" />
-        </figure>
-        <div class="info">
-            <div>
-                <h1>{name}</h1>
-                <h2>{position}</h2>
-            </div>
-            <h3>
-                <WordMap />
-                {city}, {state}, {country}
-            </h3>
-            <footer class="print">
-                <p>{(<Phone />)}{phone}</p>
-                <p>{(<Email />)}{email}</p>
-                <p><LinkedIn /> isc-miguel-angel</p>
-                <p><GitHub /> IscMiguelAngel</p>
-            </footer>
-            <footer class="no-print">
-                {
-                    email && (
-                        <a
-                            class="button square"
-                            href={`mailto:${email}`}
-                            title={`Enviar un correo electrónico a ${name} al correo ${email}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label={`Enviar un correo electrónico a ${name} al correo ${email}`}
-                        >
-                            <Email />
-                        </a>
-                    )
-                }
-                {
-                    phone && (
-                        <a
-                            class="button square"
-                            href={`tel:${phone}`}
-                            title={`Llamar a ${name} al número de teléfono ${phone}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label={`Llamar a ${name} al número de teléfono ${phone}`}
-                        >
-                            <Phone />
-                        </a>
-                    )
-                }
-                {
-                    profiles.map(({ network, username, url }) => {
-                        const Icon = SOCIAL_ICONS[network];
-
-                        return (
-                            <a
-                                class="button square"
-                                href={url}
-                                title={`Visitar el perfil de ${name} en ${network}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label={`Visitar el perfil de ${name} en ${network}`}
-                            >
-                                <Icon />
-                            </a>
-                        );
-                    })
-                }
-            </footer>
+<header class="hero">
+    <div class="hero-left">
+        <div class="profile-image">
+            <Image src={image} alt={name} width={120} height={120} loading="eager" />
+        </div>
+        <div class="contact-info">
+            {email && (
+                <a href={`mailto:${email}`} title={email}>
+                    <Email /> {email}
+                </a>
+            )}
+            {phone && (
+                <a href={`tel:${phone}`} title={phone}>
+                    <Phone /> {phone}
+                </a>
+            )}
+            <span class="location">
+                <WordMap /> {city}, {state}, {country}
+            </span>
+            {profiles.map(({ network, username, url }) => {
+                const Icon = SOCIAL_ICONS[network];
+                return (
+                    <a href={url} target="_blank" rel="noopener noreferrer" title={network}>
+                        <Icon /> {username}
+                    </a>
+                );
+            })}
         </div>
     </div>
-</Section>
+    <div class="hero-right">
+        <h1>{name}</h1>
+        <h2>{position}</h2>
+    </div>
+</header>
 
 <style>
-    .container {
+    .hero {
         display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-start;
         justify-content: space-between;
-        gap: 1rem;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding: 1.5rem 2rem;
+        border-bottom: 2px solid var(--color-primary);
     }
 
-    .container figure {
-        max-width: 150px;
-        height: 150px;
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-        border-radius: 6px;
-    }
-
-    .container figure img {
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-    }
-
-    .container .info {
-        width: auto;
+    .hero-left {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
+        align-items: flex-start;
     }
 
-    .container .info h1 {
-        color: #444;
-        font-size: 1.5rem;
-        text-wrap: pretty;
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 2px solid var(--color-border);
     }
 
-    .container .info h2 {
-        font-size: 1.1rem;
-        font-weight: 500;
-        color: #4f4f4f;
-        text-wrap: balance;
+    .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-    .container .info h3 {
-        font-size: 1rem;
-        font-weight: normal;
-        color: #4f4f4f;
-        text-wrap: balance;
-        margin-bottom: 16px;
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
     }
 
-    .container .info p {
-        color: #666;
+    .contact-info a, .contact-info span {
         display: flex;
         align-items: center;
-        gap: 0.25rem;
-        font-size: 0.85rem;
-        letter-spacing: -0.05rem;
+        gap: 0.5rem;
+        font-size: 0.8rem;
+        color: var(--color-secondary);
+        text-decoration: none;
     }
 
-    .container .info footer {
-        display: flex;
-        gap: 4px;
-        flex: 1;
+    .contact-info a:hover {
+        color: var(--color-primary);
     }
 
-    .container .info footer.print {
+    .contact-info :global(svg) {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+    }
+
+    .hero-right {
+        text-align: right;
         display: flex;
         flex-direction: column;
-        grid-template-columns: 1fr 1fr;
+        gap: 0.25rem;
+    }
+
+    .hero-right h1 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--color-primary);
+    }
+
+    .hero-right h2 {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--color-secondary);
     }
 
     @media screen and (max-width: 640px) {
-        .container {
-            flex-wrap: wrap;
+        .hero {
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
         }
 
-        .container figure {
-            width: 100px;
-            height: 100px;
+        .hero-left {
+            align-items: center;
+        }
+
+        .hero-right {
+            text-align: center;
+        }
+
+        .hero-right h1 {
+            font-size: 1.5rem;
+        }
+
+        .contact-info {
+            align-items: center;
         }
     }
 </style>

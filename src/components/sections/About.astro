@@ -1,10 +1,32 @@
 ---
-import Section from "@/components/Section.astro"
-import { basics } from '@cv'
+import { basics } from "@cv";
 
-const { summary } = basics
+const { summary } = basics;
 ---
 
-<Section title="Sobre mí">
-    <p>{ summary }</p>
-</Section>
+<section class="about">
+    <h2 class="section-title">PERFIL PROFESIONAL</h2>
+    <p>{summary}</p>
+</section>
+
+<style>
+    .about {
+        padding: 1.5rem 2rem;
+    }
+
+    .section-title {
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-primary);
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .about p {
+        text-align: justify;
+        line-height: 1.7;
+    }
+</style>

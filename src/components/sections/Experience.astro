@@ -1,40 +1,131 @@
 ---
-import Section from "@/components/Section.astro"
 import { work } from '@cv'
-
-import { formatDate, UUID } from '@/js/Functions'
+import { formatDate } from '@/js/Functions'
 ---
 
-<Section title="Experiencia">
-    <ul class="list">
+<section class="experience">
+    <h2 class="section-title">EXPERIENCIA LABORAL</h2>
+    <ul class="experience-list">
     {
-        work.map(({ company, position, url, startDate, endDate, summary, highlights }, index) => {
-            const uuid = UUID()
+        work.map(({ company, position, url, startDate, endDate, summary, highlights }) => {
             return (
-                <li id={ uuid }>
-                    <article>
-                        <header>
-                            <div>
-                                <h3>{ url !== "" ? <a href={ url } target="_blank" title={ `Visitar sitio web de ${ company }` }>{ company }</a> : company }</h3>
-                                <h4>{ position }</h4>
-                            </div>
-                            <time>{ formatDate(startDate, false, true) } - { formatDate(endDate, false, true) }</time>            
-                        </header>
-                        <main>
-                            <p>{ summary }</p>
-                        </main>
-                    </article>    
+                <li class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">
+                            <h3>{position}</h3>
+                            <span class="company">
+                                {url !== "" ? <a href={url} target="_blank" rel="noopener noreferrer">{company}</a> : company}
+                            </span>
+                        </div>
+                        <time class="item-date">{formatDate(startDate, false, true)} - {formatDate(endDate, false, true)}</time>
+                    </div>
+                    <p class="item-summary">{summary}</p>
+                    {highlights && highlights.length > 0 && (
+                        <ul class="item-highlights">
+                            {highlights.map((highlight) => (
+                                <li>{highlight}</li>
+                            ))}
+                        </ul>
+                    )}
                 </li>
             )
         })
     }
     </ul>
-</Section>
+</section>
 
 <style>
-	@media screen and (max-width: 768px) {
-		.list li article header {
-			display: block;
-		}
-	}
+    .experience {
+        padding: 1.5rem 2rem;
+    }
+
+    .section-title {
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-primary);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .experience-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .experience-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .item-title h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--color-primary);
+        margin: 0;
+    }
+
+    .item-title .company {
+        font-size: 0.875rem;
+        color: var(--color-secondary);
+    }
+
+    .item-title .company a {
+        color: var(--color-secondary);
+        text-decoration: none;
+    }
+
+    .item-title .company a:hover {
+        color: var(--color-primary);
+        text-decoration: underline;
+    }
+
+    .item-date {
+        font-size: 0.8rem;
+        color: var(--color-muted);
+        white-space: nowrap;
+    }
+
+    .item-summary {
+        font-size: 0.875rem;
+        color: var(--color-secondary);
+        line-height: 1.5;
+    }
+
+    .item-highlights {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        margin-top: 0.5rem;
+        padding-left: 1rem;
+    }
+
+    .item-highlights li {
+        font-size: 0.8rem;
+        color: var(--color-secondary);
+        list-style-type: disc;
+        line-height: 1.4;
+    }
+
+    @media screen and (max-width: 640px) {
+        .item-header {
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .item-date {
+            order: -1;
+        }
+    }
 </style>

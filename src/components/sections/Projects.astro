@@ -1,76 +1,99 @@
 ---
-import Section from "@/components/Section.astro"
-
 import { projects } from '@cv'
-import { formatDate, UUID } from '@/js/Functions'
 ---
 
-<Section title="Proyectos">
-    <ul class="list">
+<section class="projects">
+    <h2 class="section-title">PROYECTOS DESTACADOS</h2>
+    <div class="projects-grid">
         {
             projects.map(({ name, description, labels, url }) => {
                 return (
-                    <li>
-                        <article>
-                            <header>
-                                <h3>{ url !== "" ? <a href={ url } target="_blank" title={ `Visitar sitio web de ${ name }` }>{ name }</a> : name }</h3>
-                            </header>
-                            <main>
-                                <p>{ description }</p>    
-                            </main>
-                            <footer>
-                                <ul>
-                                    {
-                                        labels.map((label) => <li class="label">{ label }</li>)
-                                    }
-                                </ul>    
-                            </footer>
-                        </article>    
-                    </li>
-                )  
+                    <article class="project-card">
+                        <h3>
+                            {url !== "" ? <a href={url} target="_blank" rel="noopener noreferrer">{name}</a> : name}
+                        </h3>
+                        <p>{description}</p>
+                        <ul class="project-tags">
+                            {labels.map((label) => <li>{label}</li>)}
+                        </ul>
+                    </article>
+                )
             })
         }
-    </ul>
-</Section>
+    </div>
+</section>
 
 <style>
-    ul.list {
+    .projects {
+        padding: 1.5rem 2rem;
+    }
+
+    .section-title {
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-primary);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .projects-grid {
         display: grid;
-        grid-template-columns: repeat(
-           auto-fill,
-           minmax(250px, 1fr)
-        );
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         gap: 1rem;
     }
 
-    ul.list li article {
-        border-radius: 8px;
-        border: 1px solid #444;
-        gap: 8px;
+    .project-card {
+        border: 1px solid var(--color-border);
+        border-radius: 6px;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
-        padding: 16px;
-        height: 100%;
+        gap: 0.5rem;
+        transition: border-color 0.2s ease;
     }
 
-    ul.list li article main {
+    .project-card:hover {
+        border-color: var(--color-primary);
+    }
+
+    .project-card h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--color-primary);
+        margin: 0;
+    }
+
+    .project-card h3 a {
+        text-decoration: none;
+    }
+
+    .project-card h3 a:hover {
+        text-decoration: underline;
+    }
+
+    .project-card p {
+        font-size: 0.8rem;
+        color: var(--color-secondary);
+        line-height: 1.4;
         flex: 1;
     }
 
-    ul.list article footer {
-        height: auto;
-        opacity: 1;
-    }
-
-    ul.list li article footer ul {
+    .project-tags {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        list-style: none;
-        gap: 4px;
+        gap: 0.35rem;
+        margin-top: 0.5rem;
     }
 
-    ul.list li article footer ul li.label {
+    .project-tags li {
+        padding: 0.2rem 0.5rem;
+        background-color: var(--color-bg-secondary);
+        border: 1px solid var(--color-border);
+        border-radius: 3px;
         font-size: 0.7rem;
+        color: var(--color-muted);
     }
 </style>

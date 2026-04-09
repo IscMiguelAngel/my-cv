@@ -12,7 +12,7 @@ const { title } = Astro.props
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Curriculum Vitae" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
@@ -21,7 +21,7 @@ const { title } = Astro.props
 	<body>
 		<slot />
 		<div class="no-print floating-print">
-			<button id="print-button" class="button print-btn" title="Imprimir CV">
+			<button id="print-button" class="print-btn" title="Imprimir CV">
 				<Print />
 				<span>Imprimir</span>
 			</button>
@@ -31,220 +31,174 @@ const { title } = Astro.props
 </html>
 
 <style is:global>
+	:root {
+		--color-primary: #333;
+		--color-secondary: #666;
+		--color-muted: #888;
+		--color-accent: #444;
+		--color-border: #ddd;
+		--color-bg: #fff;
+		--color-bg-secondary: #fafafa;
+		
+		--font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+		--font-mono: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+		
+		--spacing-xs: 0.25rem;
+		--spacing-sm: 0.5rem;
+		--spacing-md: 1rem;
+		--spacing-lg: 1.5rem;
+		--spacing-xl: 2rem;
+		
+		--max-width: 800px;
+	}
+
 	* {
 		box-sizing: border-box;
-	}
-	
-	html {
-		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-		background-color: #fff;
-		letter-spacing: -0.025rem;
-	}
-
-	body {
-		background-color: #ededed;
-	}
-
-	body, figure, ul, li, p, a, b, strong, i, span, h1, h2, h3, h4, h5, h6 {
 		margin: 0;
 		padding: 0;
 	}
+	
+	html {
+		font-family: var(--font-sans);
+		background-color: var(--color-bg-secondary);
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	body {
+		background-color: var(--color-bg);
+		color: var(--color-primary);
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: var(--font-sans);
+		font-weight: 600;
+		line-height: 1.3;
+		color: var(--color-primary);
+	}
+
+	h1 { font-size: 1.75rem; }
+	h2 { font-size: 1.25rem; }
+	h3 { font-size: 1.1rem; }
+	h4 { font-size: 1rem; }
+
+	p, li, time, span, a {
+		color: var(--color-secondary);
+		font-size: 0.875rem;
+		line-height: 1.6;
+	}
 
 	a {
-		text-decoration: none;
+		color: var(--color-primary);
+		text-decoration: underline;
+	}
+
+	a:hover {
+		color: #000;
 	}
 
 	ul {
 		list-style: none;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	section {
+		padding: var(--spacing-lg) var(--spacing-xl);
+		border-bottom: 1px solid var(--color-border);
 	}
 
-	p, li, p, a, b, strong, i, span, time {
-		color: #666;
-		font-size: .8rem;
-		line-height: 1.5;
-		text-wrap: pretty;
+	section:last-child {
+		border-bottom: none;
 	}
 
-	.bg-transparent {
-		background-color: transparent;
-	}
-
-	.bg-gray {
-		background-color: #777;
-	}
-
-	.button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #9e9d9d;
-        padding: 4px;
-        border-radius: 6px;
-        transition: all 0.5s ease;
-        position: relative;
-		cursor: pointer;
-        z-index: 1;
-	}
-
-	.button:hover {
-        background-color: #eee;
-        border-color: #000000;
-    }
-
-	.button.square {
-        width: 32px;
-        height: 32px;
-	}
-
-	.button.square.square-sm {
-        width: 16px;
-        height: 16px;
-	}
-
-	.button.square.square-md {
-        width: 32px;
-        height: 32px;
-	}
-
-	.button.square.square-lg {
-        width: 64px;
-        height: 64px;
+	.container {
+		max-width: var(--max-width);
+		margin: 0 auto;
+		background: var(--color-bg);
 	}
 
 	.label {
-		padding: 3px 8px;
-		background-color: #c8c8c8;
-		border: 1px solid #444;
-		color: #333;
+		padding: var(--spacing-xs) var(--spacing-sm);
+		background-color: var(--color-bg-secondary);
+		border: 1px solid var(--color-border);
+		color: var(--color-secondary);
+		border-radius: 4px;
+		font-size: 0.75rem;
+	}
+
+	.button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid var(--color-border);
+		padding: var(--spacing-xs);
 		border-radius: 6px;
+		transition: all 0.2s ease;
+		cursor: pointer;
 	}
 
-	.list {
-		display: flex;
-		flex-direction: column;
-		gap: 16px;
-	}
-
-	.list li article header {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		justify-content: space-between;
-		gap: 32px;
-		margin-bottom: 8px;
-	}
-
-	.list li article header h4 {
-		color: #222;
-		font-weight: 400;
-		font-size: 1rem;
-		line-height: 1.3;
-	}
-
-	.list li article header h3, .list li article header h3 a {
-		font-size: 1.2rem;
-		font-weight: 500;
-		line-height: 1.3;
-		margin-bottom: 0;
-	}
-
-	.list li article header h3, .list li article header h3 a, .list li article header h3 a:link, .list li article header h3 a:visited, .list li article header h3 a:active {
-		color: #444;
-	}
-
-	.list li article header h4 {
-		color: #444;
-	}
-
-	.list li article header time {
-		color: #888;
-		margin-top: 8px;
-	}
-	
-	.list li article:hover header h3 {
-		color: #000;
-	}
-
-	.list li article main {
-		position: relative;
-		margin-bottom: 24px;
-	}
-
-	.list li article main button {
-		position: absolute;
-		top: auto;
-		right: 0;
-		bottom: -16px;
-		left: auto;
-	}
-
-	.list li article footer {
-		height: 0;
-		opacity: 0;
-		transition: all 0.5s ease-in-out;
-	}
-
-	.list li article footer.show {
-		height: auto;
-		opacity: 1;
-	}
-
-
-	.list li article footer ul {
-		list-style: inside;
+	.button:hover {
+		background-color: var(--color-bg-secondary);
+		border-color: var(--color-primary);
 	}
 
 	.floating-print {
 		position: fixed;
-		bottom: 2rem;
-		right: 2rem;
+		bottom: 1.5rem;
+		right: 1.5rem;
 		z-index: 1000;
 	}
 
 	.print-btn {
-		background-color: #fff;
+		background-color: var(--color-bg);
 		box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 		display: flex;
 		align-items: center;
-		padding: 12px 16px;
-		gap: 8px;
-		border: 1px solid #ddd;
+		padding: 0.75rem 1rem;
+		gap: var(--spacing-sm);
+		border: 1px solid var(--color-border);
 		border-radius: 9999px;
-		color: #444;
+		color: var(--color-secondary);
 		font-weight: 500;
 		font-family: inherit;
-		transition: all 0.3s ease;
 		cursor: pointer;
+		transition: all 0.3s ease;
 	}
 
 	.print-btn:hover {
-		transform: translateY(-4px);
+		transform: translateY(-2px);
 		box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-		background-color: #f8f8f8;
-		border-color: #999;
 	}
 
 	.print-btn span {
-		font-size: 0.9rem;
+		font-size: 0.875rem;
 	}
 	
 	@media print {
 		.no-print {
-			display: none!important;
+			display: none !important;
+		}
+		
+		body {
+			background: #fff;
+		}
+		
+		section {
+			padding: 1rem 0;
+			border-bottom: 1px solid #ccc;
+		}
+		
+		.container {
+			max-width: 100%;
 		}
 	}
 
-	.print {
-		display: none!important;
-	}
-
-	@media print {
-		.print {
-			display: block!important;
+	@media screen and (max-width: 640px) {
+		section {
+			padding: var(--spacing-md);
+		}
+		
+		.container {
+			padding: 0;
 		}
 	}
 </style>
